@@ -1,14 +1,25 @@
 
 
 // Colors Pallette
-$light-two: #F6F3EC;
+$light-text: #F6F3EC;
 $primary-bg: #ECE4DA;
 $bright-two: #B9A590;
 $bright-three: #574C3F;
 $text-color: #36302A;
 
-
 // Border Radius
 $card-bdr: 10px;
 $inner-card-bdr: 5px;
 $button-bdr: 20px;
+$soft-button-bdr: 10px;
+
+
+// Breakpoint units
+$tablet: 768px;
+
+// Rem & Em functions
+$base-fs: 16px;
+
+@function pxToRem() {
+    @return $base-fs * 1rem;
+}

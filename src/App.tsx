@@ -1,7 +1,12 @@
 import "./styles/index.scss";
+import { Home } from "./pages/hero";
 
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
 
 export default App;

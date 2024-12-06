@@ -1,0 +1,62 @@
+@use "./plug" as p;
+
+nav {
+  top: 0;
+  left: 0;
+  height: 10vh;
+//   border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+
+  .nav-img-container {
+    width: 10%;
+    // border: 1px solid red;
+
+    figure {
+    //   border: 1px solid red;
+      height: 100%;
+
+      img {
+        width: 100px;
+        height: 100%;
+      }
+    }
+  }
+
+  .nav-links-container {
+    // border: 1px solid blue;
+    width: 50%;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    li {
+      a {
+        font-size: clamp(16px, 2vw, 22px);
+        font-weight: 500;
+        text-decoration: none;
+        color: p.$primary-bg;
+        padding: 15px;
+        border-radius: p.$soft-button-bdr;
+      }
+
+      a:hover {
+        background-color: p.$text-color;
+        transition: all 0.25s ease;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        .nav-links-container {
+            display: none;
+        }
+    }    
+}
