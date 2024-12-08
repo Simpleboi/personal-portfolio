@@ -5,34 +5,41 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  //   border: 1px solid red;
+  // border: 1px solid red;
 
   .banner-container {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    // border: 2px solid blueviolet;
 
     h2 {
       color: p.$primary-bg;
+      // border: 1px solid red;
+      padding: 10px;
     }
 
     .banner-name {
-      font-size: 90px;
+      font-size: clamp(55px, 10vw, 90px);
       font-weight: 400;
       color: p.$primary-bg;
       text-align: center;
+      padding: 10px;
       //   border: 1px solid red;
     }
 
     .banner-header {
       font-weight: 350;
       text-align: center;
+      font-size: clamp(20px, 3vw, 26px);
     }
 
     .banner-subheading {
       font-weight: 350;
       text-align: center;
+      padding: 10px;
+      font-size: clamp(20px, 3vw, 26px);
     }
   }
 
@@ -45,6 +52,7 @@ header {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      // border: 1px solid red;
 
       a {
         i {
@@ -77,6 +85,20 @@ header {
 }
 
 .banner-btn:hover {
-    background-color: p.$text-color;
-    transition: all 0.20s ease;
+  background-color: p.$text-color;
+  transition: all 0.2s ease;
+}
+
+@media screen and (max-width: p.$tablet) {
+  header {
+    .banner-container {
+      width: 100%;
+    }
+
+    .social-container {
+      .social-inner-container {
+        width: 80%;
+      }
+    }
+  }
 }

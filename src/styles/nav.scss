@@ -50,6 +50,17 @@ nav {
       }
     }
   }
+
+  .mobile-btn {
+    background-color: transparent;
+    border: none;
+    width: 20%;
+
+    i {
+      font-size: 30px;
+      color: p.$primary-bg;
+    }
+  }
 }
 
 

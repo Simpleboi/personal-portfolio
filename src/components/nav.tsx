@@ -3,23 +3,7 @@ import "../styles/nav.scss";
 
 export const MobileNav = () => {
   return (
-      <ul className="mobile-links-container">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+      <button className="mobile-btn"><i className='bx bx-menu'></i></button>
   );
 };
 
@@ -44,6 +28,9 @@ export const MainNav = () => {
     </ul>
   );
 };
+
+
+
 
 export const Nav: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 768);
