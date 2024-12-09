@@ -18,7 +18,6 @@ import BASH from "/assets/icons/gnu-bash.png";
 import LINUX from "/assets/icons/linux.png";
 
 
-
 // defining the Image path for imports
 interface ImagePath {
   url: string;
