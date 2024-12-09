@@ -1,0 +1,41 @@
+@use "./plug" as p;
+
+.skills-container {
+    // border: 1px solid black;
+    height: 70%;
+    width: clamp(200px, 25%, 400px);
+    box-shadow: p.$boxShadow;
+    border-radius: p.$soft-button-bdr;
+
+    .card-header {
+        // border: 1px solid red;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .logo-container {
+        // border: 2px solid blue;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .img-container {
+        // border: 1px solid red;
+        height: 100px;
+        width: 100px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
