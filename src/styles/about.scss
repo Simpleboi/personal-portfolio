@@ -1,0 +1,87 @@
+@use "./plug" as p;
+
+#about {
+//   border: 1px solid red;
+  height: auto;
+  display: flex;
+
+  .desc-container {
+    width: 50%;
+    background-color: p.$primary-bg;
+
+    h1 {
+    //   border: 1px solid red;
+      padding: 20px;
+      font-size: 50px;
+      font-weight: 400;
+      margin-left: 20px;
+      color: p.$bright-three;
+      background-color: p.$primary-bg;
+    }
+
+    p {
+      padding: 20px;
+      font-size: 20px;
+      color: p.$bright-three;
+      background-color: p.$light-text;
+      border-radius: p.$soft-button-bdr;
+      margin: 30px;
+      box-shadow: p.$boxShadow;
+
+      a {
+        text-decoration: none;
+        color: p.$unvisited;
+    }
+
+      a:visited {
+        color: p.$visited;
+      }
+
+      ul {
+        li {
+            padding: 5px;
+            list-style: none;
+        }
+      };
+    }
+  }
+
+  .about-right-container {
+    width: 50%;
+    // border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: p.$primary-bg;
+    
+    .about-img-container {
+      width: 450px;
+      height: 450px;
+    //   border: 2px solid black;
+      border-radius: p.$soft-button-bdr;
+      box-shadow: p.$boxShadow;
+
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: p.$soft-button-bdr;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: p.$laptop) {
+    #about {
+        flex-direction: column;
+
+        .desc-container {
+            width: 100%;
+        }
+
+        .about-right-container {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}

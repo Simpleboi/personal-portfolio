@@ -1,11 +1,15 @@
 
-
 // Colors Pallette
 $light-text: #F6F3EC;
 $primary-bg: #ECE4DA;
 $bright-two: #B9A590;
 $bright-three: #574C3F;
 $text-color: #36302A;
+
+
+// Links
+$unvisited: #4444e9;
+$visited: #551A8B;
 
 // Border Radius
 $card-bdr: 10px;
@@ -17,6 +21,7 @@ $soft-button-bdr: 10px;
 // Breakpoint units
 $monitor: 1200px;
 $laptop: 1024px;
+$laptopSM: 968px;
 $tablet: 768px;
 $mobile: 468px;
 

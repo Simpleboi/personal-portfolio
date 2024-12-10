@@ -27,6 +27,7 @@ export const SkillsCardFE: React.FC = () => {
   return (
     <aside className="skills-container">
       <h1 className="card-header">Front-end</h1>
+      <hr />
       <div className="logo-container">
         <SkillsLogo url={HTML} />
         <SkillsLogo url={CSS} />
@@ -44,6 +45,7 @@ export const SkillsCardBE: React.FC = () => {
   return (
     <aside className="skills-container">
       <h1 className="card-header">Back-end</h1>
+      <hr />
       <div className="logo-container">
         <SkillsLogo url={DB} />
         <SkillsLogo url={NODE} />
@@ -57,6 +59,7 @@ export const SkillsCardOther: React.FC = () => {
   return (
     <aside className="skills-container">
       <h1 className="card-header">Other</h1>
+      <hr />
       <div className="logo-container">
         <SkillsLogo url={XD} />
         <SkillsLogo url={FIG} />
