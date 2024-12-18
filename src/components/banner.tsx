@@ -10,7 +10,7 @@ export const Banner: React.FC = () => {
     <header>
       <div className="banner-container">
         <h2 className="banner-header">Good Morning!👋🏽</h2>
-        <h1 className="banner-name">I Am Nathaniel Paz</h1>
+        <h1 className="banner-name">I'm <span>&lt;Nate/&gt;</span></h1>
         <h2 className="banner-subheading">
           Aspiring Computer Scientist and Web Developer
         </h2>

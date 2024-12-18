@@ -26,7 +26,11 @@ header {
       color: p.$primary-bg;
       text-align: center;
       padding: 10px;
-      //   border: 1px solid red;
+      // border: 1px solid red;
+
+      span {
+        color: #4ABF66;
+      }
     }
 
     .banner-header {
