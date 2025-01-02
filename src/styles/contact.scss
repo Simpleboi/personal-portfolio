@@ -1,0 +1,160 @@
+@use "./plug" as p;
+
+.contact {
+  border: 1px solid red;
+  height: 80vh;
+  background-color: p.$bright-two;
+  display: flex;
+
+  .left-wrapper {
+    width: 50%;
+    // border: 1px solid red;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      color: p.$text-color;
+    }
+    p {
+      // border: 1px solid red;
+      width: 60%;
+      font-size: 1.25rem;
+      color: p.$text-color;
+    }
+  }
+
+  .right-wrapper {
+    // border: 1px solid red;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      //   border: 1px solid red;
+      padding-top: 1rem;
+      height: 90%;
+      width: 80%;
+
+      .name-wrapper {
+        // border: 1px solid red;
+        display: flex;
+        height: 20%;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        .first-name {
+          //   border: 1px solid blue;
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          font-size: 1.5rem;
+          color: p.$bright-three;
+          gap: 10px;
+
+          input {
+            width: 100%;
+            height: 100%;
+            border-radius: p.$button-bdr;
+            border: none;
+            background-color: p.$primary-bg;
+            padding-left: 1rem;
+          }
+          input:hover {
+            box-shadow: p.$boxShadow;
+          }
+        }
+        .last-name {
+          //   border: 1px solid blue;
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          font-size: 1.5rem;
+          color: p.$bright-three;
+          gap: 10px;
+
+          input {
+            width: 100%;
+            height: 100%;
+            border-radius: p.$button-bdr;
+            border: none;
+            background-color: p.$primary-bg;
+            padding-left: 1rem;
+          }
+          input:hover {
+            box-shadow: p.$boxShadow;
+          }
+        }
+      }
+      .email {
+        // border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 20%;
+        font-size: 1.5rem;
+        color: p.$bright-three;
+        gap: 10px;
+        margin-bottom: 1.5rem;
+
+        input {
+          width: 100%;
+          height: 100%;
+          border-radius: p.$button-bdr;
+          background-color: p.$primary-bg;
+          border: none;
+          padding-left: 1rem;
+        }
+        input:hover {
+          box-shadow: p.$boxShadow;
+        }
+      }
+      .message {
+        // border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 35%;
+        font-size: 1.5rem;
+        color: p.$bright-three;
+        gap: 10px;
+
+        textarea {
+          width: 100%;
+          height: 100%;
+          border-radius: p.$button-bdr;
+          background-color: p.$primary-bg;
+          border: none;
+          padding: 1rem;
+        }
+        textarea:active {
+          box-shadow: p.$boxShadow;
+        }
+      }
+
+      .submit {
+        // border: 1px solid red;
+        width: 35%;
+        margin-top: 2rem;
+        height: 10%;
+        border-radius: p.$button-bdr;
+        background-color: p.$text-color;
+        color: p.$primary-bg;
+        border: none;
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+
+      .submit:hover {
+        background-color: p.$bright-three;
+        transition: all 0.25s ease;
+      }
+    }
+  }
+}
+
