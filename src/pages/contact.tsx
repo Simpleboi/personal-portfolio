@@ -7,6 +7,7 @@ export const Contact = () => {
       <div className="left-wrapper">
         <h1>Contact Me</h1>
         <p>Interested in working with me? Fill out some info and I'll be in touch shortly. Can't wait to hear from you!</p>
+        <p style={{color: "red"}}>This section is still in development, the form doesn't work yet</p>
       </div>
       <div className="right-wrapper">
         <form action="#">
