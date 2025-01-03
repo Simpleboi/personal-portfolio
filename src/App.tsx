@@ -4,16 +4,20 @@ import { Skills } from "./pages/skills";
 import { About } from "./pages/about";
 import { Contact } from "./pages/contact";
 import { Blog } from "./pages/Blog";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
-    <>
-      <Home />
-      <Skills />
-      <About />
-      <Contact />
-      <Blog />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/Blog" element={<Blog />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/skills" element={<Skills />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

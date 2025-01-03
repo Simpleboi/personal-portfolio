@@ -2,6 +2,7 @@
 
 #blog {
   height: 50vh;
+  background-color: p.$accent-second-bg;
 
   .blogBanner-container {
     height: 100%;
@@ -10,7 +11,7 @@
     align-items: center;
     gap: 1rem;
     flex-direction: column;
-    background-color: p.$accent-second;
+    background-color: p.$accent-second-bg;
 
     h4 {
       color: p.$primary-bg;
@@ -45,3 +46,4 @@
     }
   }
 }
+

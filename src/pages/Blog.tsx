@@ -1,3 +1,4 @@
+import { Nav } from "../components/nav";
 import "../styles/Blog.scss";
 
 export const BlogBanner = () => {
@@ -16,6 +17,7 @@ export const BlogBanner = () => {
 export const Blog = () => {
   return (
     <section id="blog">
+      <Nav />
       <BlogBanner />
     </section>
   );

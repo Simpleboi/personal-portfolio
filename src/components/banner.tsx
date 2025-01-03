@@ -1,16 +1,22 @@
-import React from "react";
 import "../styles/banner.scss";
 
 export const BannerBTN: React.FC = () => {
   return <button className="banner-btn">Contact Me</button>;
 };
 
-export const Banner: React.FC = () => {
+export interface BannerProps {
+  name?: string;
+}
+
+export const Banner: React.FC<BannerProps> = () => {
+  
   return (
     <header>
       <div className="banner-container">
         <h2 className="banner-header">Good Morning!👋🏽</h2>
-        <h1 className="banner-name">I'm <span>&lt;Nate/&gt;</span></h1>
+        <h1 className="banner-name">
+          I'm <span>&lt;Nate/&gt;</span>
+        </h1>
         <h2 className="banner-subheading">
           Aspiring Computer Scientist and Web Developer
         </h2>

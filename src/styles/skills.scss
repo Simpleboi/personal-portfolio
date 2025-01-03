@@ -2,7 +2,8 @@
 
 #skills {
     height: auto;
-    background-color: p.$primary-bg;
+    margin-top: 2rem;
+    background-color: p.$accent-second-bg;
 
     .skills-header {
         // border: 1px solid red;
@@ -10,8 +11,8 @@
         @include p.flexCenter;
         font-weight: 400;
         font-size: 50px;
-        background-color: p.$bright-two;
-        color: p.$bright-three;
+        background-color: p.$accent-second-bg;
+        color: p.$main-color;
     }
 
     .skills-wrapper {

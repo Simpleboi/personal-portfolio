@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/nav.scss";
 
 export const MobileNav = () => {
   return (
-      <button className="mobile-btn"><i className='bx bx-menu'></i></button>
+    <button className="mobile-btn">
+      <i className="bx bx-menu"></i>
+    </button>
   );
 };
 
@@ -11,24 +14,23 @@ export const MainNav = () => {
   return (
     <ul className="nav-links-container">
       <li>
-        <a href="#">Home</a>
+        <Link to="/">&lt;Home&gt;</Link>
       </li>
       <li>
-        <a href="#">Portfolio</a>
+        <Link to="/portfolio">&lt;Portfolio&gt;</Link>
       </li>
       <li>
-        <a href="#about">About</a>
+        <Link to="/about">&lt;About&gt;</Link>
       </li>
       <li>
-        <a href="#">Blog</a>
+        <Link to="/blog">&lt;Blog&gt;</Link>
       </li>
       <li>
-        <a href="#">Contact</a>
+        <Link to="/contact">&lt;Contact&gt;</Link>
       </li>
     </ul>
   );
 };
-
 
 export const Nav: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 768);
