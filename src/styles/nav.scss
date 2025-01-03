@@ -12,15 +12,14 @@ nav {
 
   .nav-img-container {
     width: 10%;
-    // border: 1px solid red;
 
     figure {
-    //   border: 1px solid red;
       height: 100%;
 
       img {
-        width: 100px;
+        width: auto;
         height: 100%;
+        object-fit: cover;
       }
     }
   }
@@ -44,7 +43,7 @@ nav {
       }
 
       a:hover {
-        background-color: p.$text-color;
+        color: p.$main-color;
         transition: all 0.25s ease;
       }
     }

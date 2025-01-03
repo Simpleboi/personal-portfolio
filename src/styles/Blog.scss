@@ -1,0 +1,47 @@
+@use "./plug" as p;
+
+#blog {
+  height: 50vh;
+
+  .blogBanner-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: p.$accent-second;
+
+    h4 {
+      color: p.$primary-bg;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 400;
+      color: p.$primary-bg;
+
+      span {
+        color: p.$main-color;
+      }
+    }
+
+    h2 {
+      color: p.$primary-bg;
+      font-weight: 400;
+
+      span {
+        color: p.$main-color;
+      }
+    }
+
+    div {
+        i {
+            margin-top: 2rem;
+            font-size: 2rem;
+            color: p.$primary-bg;
+        }
+    }
+  }
+}

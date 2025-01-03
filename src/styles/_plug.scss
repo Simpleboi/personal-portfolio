@@ -7,6 +7,16 @@ $bright-three: #574C3F;
 $text-color: #36302A;
 
 
+// New Color Pallette
+$main-color: #4ABF66;
+$dark-green: #3A994F;
+$muted-green: #A8D8BA;
+
+
+// Accent colors
+$accent-main: #333333;
+$accent-second: #444444;
+
 // Links
 $unvisited: #4444e9;
 $visited: #551A8B;
@@ -17,6 +27,13 @@ $inner-card-bdr: 5px;
 $button-bdr: 20px;
 $soft-button-bdr: 10px;
 
+/*
+use dark gray for backgrounds, and light gray or white for readability to balance darker sections. 
+
+Use black / dark gray for main text.
+
+use main green for buttons on interactive elements. 
+*/
 
 // Breakpoint units
 $monitor: 1200px;

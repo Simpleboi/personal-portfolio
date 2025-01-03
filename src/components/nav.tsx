@@ -30,8 +30,6 @@ export const MainNav = () => {
 };
 
 
-
-
 export const Nav: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 768);
 

@@ -65,7 +65,7 @@ header {
         }
 
         i:hover {
-          color: p.$bright-three;
+          color: p.$main-color;
           transition: all 0.25s ease;
         }
       }
@@ -84,12 +84,12 @@ header {
   padding: 20px 35px;
   font-size: 20px;
   background-color: transparent;
-  color: p.$primary-bg;
+  color: p.$main-color;
   border-radius: p.$button-bdr;
 }
 
 .banner-btn:hover {
-  background-color: p.$text-color;
+  background-color: p.$accent-main;
   transition: all 0.2s ease;
 }
 
