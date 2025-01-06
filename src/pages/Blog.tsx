@@ -52,7 +52,8 @@ export const BlogNewsLetter = () => {
         <h3>Join my newsletter to recieve the latest posts and insights directly in your inbox</h3>
         <form action="">
           <input type="email"
-          placeholder="Enter your email" />
+          placeholder="Enter your email" 
+          required/>
           <input type="submit" value="Subscribe"/>
         </form>
       </div>
