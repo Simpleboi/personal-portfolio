@@ -38,12 +38,68 @@
     }
 
     div {
-        i {
-            margin-top: 2rem;
-            font-size: 2rem;
-            color: p.$primary-bg;
-        }
+      i {
+        margin-top: 2rem;
+        font-size: 2rem;
+        color: p.$primary-bg;
+      }
+    }
+  }
+
+  .blog-filter-container {
+    height: 20vh;
+    background-color: p.$primary-bg;
+
+    .filter-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // border: 1px solid red;
+      height: 60%;
+
+      input {
+        border: none;
+        width: 50%;
+        height: 50%;
+        padding: 1rem;
+        border-radius: p.$soft-button-bdr;
+        background-color: p.$accent-second-bg;
+        color: p.$main-color;
+        font-size: 1rem;
+      }
+
+      input::placeholder {
+        color: p.$main-color;
+        font-size: 1rem;        
+      }
+
+      input::value {
+        color: red;
+      }
+    }
+
+    .filter-bottom {
+      // border: 2px solid blue;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem;
+
+      button {
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: none;
+        background-color: p.$accent-second-bg;
+        color: p.$primary-bg;
+        cursor: pointer;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+        transition: all 0.25s ease;
+        background-color: p.$accent-main;
+      }
     }
   }
 }
-
