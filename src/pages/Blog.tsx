@@ -44,12 +44,29 @@ export const BlogFilter = () => {
   );
 };
 
+export const BlogNewsLetter = () => {
+  return (
+    <section className="blog-newsletter">
+      <div className="newsletter-container">
+        <h1>Stay Updated</h1>
+        <h3>Join my newsletter to recieve the latest posts and insights directly in your inbox</h3>
+        <form action="">
+          <input type="email"
+          placeholder="Enter your email" />
+          <input type="submit" value="Subscribe"/>
+        </form>
+      </div>
+    </section>
+  );
+};
+
 export const Blog = () => {
   return (
     <section id="blog">
       <Nav />
       <BlogBanner />
       <BlogFilter />
+      <BlogNewsLetter />
     </section>
   );
 };
