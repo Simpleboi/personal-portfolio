@@ -67,7 +67,7 @@ export const Blog = () => {
       <Nav />
       <BlogBanner />
       <BlogFilter />
-      <BlogNewsLetter />
+      {/* <BlogNewsLetter /> */}
     </section>
   );
 };

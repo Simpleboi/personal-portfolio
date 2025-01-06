@@ -16,12 +16,18 @@
     h4 {
       color: p.$primary-bg;
       font-weight: 400;
+      padding: 0 1rem;
+      width: 100%;
+      text-align: center;
     }
 
     h1 {
       font-size: 3.5rem;
       font-weight: 400;
       color: p.$primary-bg;
+      padding: 0 1rem;
+      width: 100%;
+      text-align: center;
 
       span {
         color: p.$main-color;
@@ -31,6 +37,9 @@
     h2 {
       color: p.$primary-bg;
       font-weight: 400;
+      width: 100%;
+      text-align: center;
+      padding: 0 2rem;
 
       span {
         color: p.$main-color;
@@ -102,7 +111,6 @@
   }
 
   .blog-newsletter {
-    border: 1px solid red;
     height: 40vh;
     background-color: p.$primary-bg;
     @include p.flexCenter;
@@ -167,6 +175,23 @@
           background-color: p.$accent-main;
           transition: all 0.25s ease;
           box-shadow: p.$boxShadow;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  #blog {
+    .blog-filter-container {
+      border: 2px solid blue;
+  
+      .filter-top {
+        border: 1px solid red;
+  
+        input {
+          width: 80%;          
         }
       }
     }
