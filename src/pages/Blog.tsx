@@ -20,16 +20,6 @@ export const BlogBanner = () => {
   );
 };
 
-const Filters = [
-  "Web Development",
-  "React",
-  "TypeScript",
-  "AI",
-  "Technology",
-  "Future Trends",
-  "Programming",
-];
-
 export const BlogFilter = () => {
   return (
     <section className="blog-filter-container">
@@ -66,7 +56,29 @@ export const BlogNewsLetter = () => {
   );
 };
 
-export const BlogPost = () => {
+const Filters = [
+  "Web Development",
+  "React",
+  "TypeScript",
+  "AI",
+  "Technology",
+  "Future Trends",
+  "Programming",
+];
+
+export interface BlogPostProps {
+  postName?: string;
+  postDesc?: string;
+  postDate?: string;
+  filters?: string[];
+}
+
+export const BlogPost: React.FC<BlogPostProps> = ({
+  postName = "Post Name",
+  postDesc = "A basic Description",
+  postDate = "Januaray 1st, 2025",
+  filters = ["General"],
+}) => {
   return (
     <div className="blogpost-container">
       <figure>
@@ -74,14 +86,14 @@ export const BlogPost = () => {
       </figure>
       <div className="filter-container">
         <ul>
-          <button>Web Development</button>
-          <button>React</button>
-          <button>AI</button>
+          {filters.map((filter, index) => (
+            <button key={index}>{filter}</button>
+          ))}
         </ul>
       </div>
-      <h1>Post Title</h1>
-      <p>Post description</p>
-      <h2>January 7th, 2025 * 9 min read</h2>
+      <h1>{postName}</h1>
+      <p>{postDesc}</p>
+      <h2>{postDate}</h2>
       <div className="read-full-post">
         <button>Read Full Post</button>
       </div>
@@ -96,7 +108,14 @@ export const Blog = () => {
       <BlogBanner />
       <BlogFilter />
       <div className="post-container">
-        <BlogPost />
+        <BlogPost postName="Why TypeScript is overhated in my personal opinion" />
+        <BlogPost
+          postName="TailwindCSS's utility classes aren't beneficial for strong developers"
+          postDesc="This is why I personally think Tailwind is actually booty cheeks in terms of raw development"
+        />
+        <BlogPost postName="Why TypeScript is overhated in my personal opinion" />
+        <BlogPost postName="Why TypeScript is overhated in my personal opinion" 
+        filters={["Web Development", "Ai", "Space Tech", "Deez tech"]}/>
       </div>
       {/* <BlogNewsLetter /> */}
     </section>
