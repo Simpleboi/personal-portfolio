@@ -14,19 +14,19 @@ export const MainNav = () => {
   return (
     <ul className="nav-links-container">
       <li>
-        <Link to="/">&lt;Home&gt;</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/portfolio">&lt;Portfolio&gt;</Link>
+        <Link to="/portfolio">Portfolio</Link>
       </li>
       <li>
-        <Link to="/about">&lt;About&gt;</Link>
+        <Link to="/about">About</Link>
       </li>
       <li>
-        <Link to="/blog">&lt;Blog&gt;</Link>
+        <Link to="/blog">Blog</Link>
       </li>
       <li>
-        <Link to="/contact">&lt;Contact&gt;</Link>
+        <Link to="/contact">Contact</Link>
       </li>
     </ul>
   );
