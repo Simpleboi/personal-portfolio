@@ -53,20 +53,59 @@ nav {
   .mobile-btn {
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    z-index: 1000;
     width: 20%;
 
     i {
-      font-size: 30px;
+      font-size: 3rem;
+      transition: transform 0.3s ease;
       color: p.$primary-bg;
     }
   }
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100%;
+  background-color: p.$accent-main;
+  color: #fff;
+  z-index: 999;
+  transition: right 0.3s ease;
+
+  &.open {
+    right: 0;
+  }
+
+  .mobile-nav-links {
+    list-style: none;
+    padding: 3.5rem 2.5rem;
+    // border: 1px solid red;
+
+    li {
+      margin-bottom: 1.5rem;
+      // border: 1px solid red;
+
+      a {
+        color: p.$main-color;
+        text-decoration: none;
+        font-size: 2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
-    .nav-container {
-        .nav-links-container {
-            display: none;
-        }
-    }    
+  .nav-container {
+    .nav-links-container {
+      display: none;
+    }
+  }
 }

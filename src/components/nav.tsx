@@ -3,10 +3,47 @@ import { Link } from "react-router-dom";
 import "../styles/nav.scss";
 
 export const MobileNav = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <button className="mobile-btn">
-      <i className="bx bx-menu"></i>
-    </button>
+    <>
+      <button className="mobile-btn" onClick={toggleMenu}>
+        <i className={`bx ${isMenuOpen ? "bx-x" : "bx-menu"}`}></i>
+      </button>
+      <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
+        <ul className="mobile-nav-links">
+          <li>
+            <Link to="/" onClick={() => setIsMenuOpen(false)}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/portfolio" onClick={() => setIsMenuOpen(false)}>
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/blog" onClick={() => setIsMenuOpen(false)}>
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </>
   );
 };
 

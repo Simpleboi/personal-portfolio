@@ -47,12 +47,6 @@ $mobile: 468px;
 $boxShadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   
 
-// Rem & Em functions
-$base-fs: 16px;
-
-@function pxToRem() {
-    @return $base-fs * 1rem;
-}
 
 @mixin flexCenter {
     display: flex;
