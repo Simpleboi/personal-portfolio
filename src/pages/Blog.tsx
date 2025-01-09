@@ -117,7 +117,7 @@ export const Blog = () => {
         <BlogPost postName="Why TypeScript is overhated in my personal opinion" 
         filters={["Web Development", "Ai", "Space Tech", "Deez tech"]}/>
       </div>
-      {/* <BlogNewsLetter /> */}
+      <BlogNewsLetter />
     </section>
   );
 };
