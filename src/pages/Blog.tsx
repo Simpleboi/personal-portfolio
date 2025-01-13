@@ -74,6 +74,7 @@ export interface BlogPostProps {
   postDate?: string;
   filters?: string[];
   image?: string;
+  id: number;
 }
 
 export const BlogPost: React.FC<BlogPostProps> = ({
@@ -82,6 +83,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({
   postDate = "Januaray 1st, 2025",
   filters = ["General"],
   image,
+  id
 }) => {
   return (
     <div className="blogpost-container">
@@ -99,7 +101,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({
       <p>{postDesc}</p>
       <h2>{postDate}</h2>
       <div className="read-full-post">
-        <Link to={`/blog/${encodeURIComponent(postName)}`} className="btn-link">
+        <Link to={`/blog/${id}`} className="btn-link">
           <button className="rfp">Read Full Post</button>
         </Link>
       </div>
@@ -121,6 +123,7 @@ export const Blog = () => {
             postDate={post.postDate}
             filters={post.filters}
             image={post.image}
+            id={post.id}
           />
         ))}
       </div>
@@ -130,8 +133,8 @@ export const Blog = () => {
 };
 
 export const BlogPostDetails = () => {
-  const { postName } = useParams();
-  const post = blogPosts.find((post) => post.postName === postName);
+  const { id } = useParams<{ id: string }>(); // Get the post ID from the URL
+  const post = blogPosts.find((post) => post.id.toString() === id);
 
   if (!post) {
     return <h1>Post not found</h1>;
@@ -141,7 +144,6 @@ export const BlogPostDetails = () => {
     <div className="blogpost-details">
       <h1>{post.postName}</h1>
       <img src={post.image} alt={post.postName} />
-      <p>{post.postDesc}</p>
       <h2>{post.postDate}</h2>
       <div className="filters">
         {post.filters.map((filter, index) => (
@@ -150,6 +152,10 @@ export const BlogPostDetails = () => {
           </span>
         ))}
       </div>
+      <div
+        className="post-content"
+        dangerouslySetInnerHTML={{ __html: post.content }}
+      ></div>
     </div>
   );
 };
