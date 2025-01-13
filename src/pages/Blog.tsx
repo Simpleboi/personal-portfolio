@@ -1,8 +1,8 @@
 import { Nav } from "../components/nav";
+import { useParams, Link } from "react-router-dom";
 import PostOne from "/assets/images/blog-post-one.jpg";
 import "../styles/Blog.scss";
 import { blogPosts } from "../components/postDetails";
-
 
 export const BlogBanner = () => {
   return (
@@ -81,7 +81,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({
   postDesc = "A basic Description",
   postDate = "Januaray 1st, 2025",
   filters = ["General"],
-  image
+  image,
 }) => {
   return (
     <div className="blogpost-container">
@@ -99,7 +99,9 @@ export const BlogPost: React.FC<BlogPostProps> = ({
       <p>{postDesc}</p>
       <h2>{postDate}</h2>
       <div className="read-full-post">
-        <button>Read Full Post</button>
+        <Link to={`/blog/${encodeURIComponent(postName)}`} className="btn-link">
+          <button className="rfp">Read Full Post</button>
+        </Link>
       </div>
     </div>
   );
@@ -113,15 +115,41 @@ export const Blog = () => {
       <BlogFilter />
       <div className="post-container">
         {blogPosts.map((post) => (
-          <BlogPost 
-          postName={post.postName}
-          postDesc={post.postDate}
-          postDate={post.postDate}
-          filters={post.filters}
+          <BlogPost
+            postName={post.postName}
+            postDesc={post.postDate}
+            postDate={post.postDate}
+            filters={post.filters}
+            image={post.image}
           />
         ))}
       </div>
       <BlogNewsLetter />
     </section>
+  );
+};
+
+export const BlogPostDetails = () => {
+  const { postName } = useParams();
+  const post = blogPosts.find((post) => post.postName === postName);
+
+  if (!post) {
+    return <h1>Post not found</h1>;
+  }
+
+  return (
+    <div className="blogpost-details">
+      <h1>{post.postName}</h1>
+      <img src={post.image} alt={post.postName} />
+      <p>{post.postDesc}</p>
+      <h2>{post.postDate}</h2>
+      <div className="filters">
+        {post.filters.map((filter, index) => (
+          <span key={index} className="filter">
+            {filter}
+          </span>
+        ))}
+      </div>
+    </div>
   );
 };

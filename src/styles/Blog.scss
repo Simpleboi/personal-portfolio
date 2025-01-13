@@ -271,15 +271,27 @@
         @include p.flexCenter;
         padding: 0.5rem 0 1rem 0;
 
-        button {
+        .btn-link {
           width: 90%;
           padding: 1rem;
-          font-weight: 600;
           color: p.$accent-main;
           border: none;
           border-radius: p.rem(5px);
           background-color: p.$bright-two;
           cursor: pointer;
+          text-decoration: none;
+
+          button {
+            background-color: p.$bright-two;
+            cursor: pointer; 
+            font-weight: 600;
+            border: none; 
+            font-size: 1rem;
+            width: 100%;
+            height: 100%;
+            color: p.$accent-main;
+            @include p.flexCenter;
+          }
         }
       }
     }

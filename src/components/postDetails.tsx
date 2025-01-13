@@ -6,6 +6,7 @@ export const blogPosts = [
     postDate: "January 2nd, 2025",
     filters: ["TypeScript", "Web Development"],
     image: "/assets/images/blog-post-one.jpg",
+    id: 1
   },
   {
     postName:
@@ -22,5 +23,6 @@ export const blogPosts = [
     postDate: "January 10th, 2025",
     filters: ["AI", "Future Trends"],
     image: "/assets/images/blog-post-three.jpg",
+    id: 1
   },
 ];
