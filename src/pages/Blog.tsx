@@ -1,6 +1,8 @@
 import { Nav } from "../components/nav";
 import PostOne from "/assets/images/blog-post-one.jpg";
 import "../styles/Blog.scss";
+import { blogPosts } from "../components/postDetails";
+
 
 export const BlogBanner = () => {
   return (
@@ -71,6 +73,7 @@ export interface BlogPostProps {
   postDesc?: string;
   postDate?: string;
   filters?: string[];
+  image?: string;
 }
 
 export const BlogPost: React.FC<BlogPostProps> = ({
@@ -78,11 +81,12 @@ export const BlogPost: React.FC<BlogPostProps> = ({
   postDesc = "A basic Description",
   postDate = "Januaray 1st, 2025",
   filters = ["General"],
+  image
 }) => {
   return (
     <div className="blogpost-container">
       <figure>
-        <img src={PostOne} alt="" />
+        <img src={image || PostOne} alt="" />
       </figure>
       <div className="filter-container">
         <ul>
@@ -108,14 +112,14 @@ export const Blog = () => {
       <BlogBanner />
       <BlogFilter />
       <div className="post-container">
-        <BlogPost postName="Why TypeScript is overhated in my personal opinion" />
-        <BlogPost
-          postName="TailwindCSS's utility classes aren't beneficial for strong developers"
-          postDesc="This is why I personally think Tailwind is actually booty cheeks in terms of raw development"
-        />
-        <BlogPost postName="Why TypeScript is overhated in my personal opinion" />
-        <BlogPost postName="Why TypeScript is overhated in my personal opinion" 
-        filters={["Web Development", "Ai", "Space Tech", "Deez tech"]}/>
+        {blogPosts.map((post) => (
+          <BlogPost 
+          postName={post.postName}
+          postDesc={post.postDate}
+          postDate={post.postDate}
+          filters={post.filters}
+          />
+        ))}
       </div>
       <BlogNewsLetter />
     </section>

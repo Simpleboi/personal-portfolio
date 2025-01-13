@@ -241,7 +241,7 @@
           display: flex;
           flex-wrap: wrap;
           align-items: center;
-          justify-content: space-evenly;
+          justify-content: flex-start;
           gap: 0.5rem;
 
           button {
@@ -279,6 +279,7 @@
           border: none;
           border-radius: p.rem(5px);
           background-color: p.$bright-two;
+          cursor: pointer;
         }
       }
     }
