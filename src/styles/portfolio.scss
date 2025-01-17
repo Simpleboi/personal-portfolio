@@ -1,0 +1,22 @@
+@use "./plug" as p;
+
+.portfolio-container {
+    border: 1px solid red;
+    background-color: p.$accent-second-bg;
+
+    .port-header {
+        border: 2px solid red;
+        margin-top: 1rem;
+        padding: 2rem 1rem;
+        
+        h1 {
+            font-weight: 500;
+            font-size: 2.5rem;
+            color: p.$primary-bg;
+
+            span {
+                color: p.$main-color;
+            }
+        }
+    }
+}
