@@ -20,7 +20,7 @@ export const blogPosts = [
     id: 2,
     content: `<h1>Hello World<h1/>`
   },
-  {
+{
     id: 3,
     postName: "The future of AI in web development",
     postDesc: "How AI tools are reshaping the web development landscape.",
