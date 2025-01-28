@@ -4,7 +4,6 @@ import PFP from "/assets/images/profile.jpg";
 import { Nav } from "../components/nav";
 import { Skills } from "./skills";
 
-
 export const AboutDesc = () => {
   return (
     <div className="desc-container">
