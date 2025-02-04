@@ -1,11 +1,10 @@
 @use "./plug" as p;
 
 .portfolio-container {
-    border: 1px solid red;
     background-color: p.$accent-second-bg;
 
     .port-header {
-        border: 2px solid red;
+        // border: 2px solid red;
         margin-top: 1rem;
         padding: 2rem 1rem;
         
@@ -18,5 +17,35 @@
                 color: p.$main-color;
             }
         }
+    }
+    .port-items {
+        border: 1px solid red;
+        display: flex;
+        background-color: p.$primary-bg;
+    }
+}
+
+.port-card-container {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    max-width: p.rem(500px);
+
+    figure {
+        width: 100%;
+        height: auto;
+        border: 1px solid red;
+
+        img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    h2 {
+        border: 2px solid blue;
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: 550;
     }
 }

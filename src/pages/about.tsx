@@ -53,6 +53,12 @@ export const AboutDesc = () => {
               | A custom CSS preprocessor that utilizes framework rich features
               with a utility-first approach
             </li>
+            <li>
+              <a href="https://github.com/Simpleboi/FireSpark" target="_blank">
+                FireSpark
+              </a>{" "}
+              | A framework-agnostic component based library aimed to speed-up web development. Built on top of SparkCSS.
+            </li>
           </ul>
           <br />
           My current tech stack includes Vite as a build tool for fast
