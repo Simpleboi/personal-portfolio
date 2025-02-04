@@ -32,13 +32,13 @@
     box-shadow: p.$boxShadow;
     border-radius: 0.5rem;
     display: flex;
-    width: clamp(p.rem(300px), 30%, p.rem(450px));
+    width: clamp(p.rem(350px), 40%, p.rem(450px));
     flex-direction: column;
     max-width: p.rem(500px);
 
     figure {
         width: 100%;
-        height: auto;
+        height: 300px;
         border-radius: 0.5rem 0.5rem 0 0;
 
         img {
