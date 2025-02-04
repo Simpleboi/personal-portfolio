@@ -54,9 +54,9 @@ export const ContactForm = () => {
 
 export const Contact = () => {
   return (
-    <>
+    <section className="contact-container">
       <Nav />
-      <Contact />
-    </>
+      <ContactForm />
+    </section>
   );
 };
