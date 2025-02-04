@@ -19,33 +19,59 @@
         }
     }
     .port-items {
-        border: 1px solid red;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         background-color: p.$primary-bg;
+        gap: 2rem;
+        padding: 1rem;
     }
 }
 
 .port-card-container {
-    border: 3px solid red;
+    box-shadow: p.$boxShadow;
+    border-radius: 0.5rem;
     display: flex;
+    width: clamp(p.rem(300px), 30%, p.rem(450px));
     flex-direction: column;
     max-width: p.rem(500px);
 
     figure {
         width: 100%;
         height: auto;
-        border: 1px solid red;
+        border-radius: 0.5rem 0.5rem 0 0;
 
         img {
-            object-fit: contain;
+            object-fit: cover;
             height: 100%;
             width: 100%;
+            border-radius: 0.5rem 0.5rem 0 0;
         }
     }
     h2 {
-        border: 2px solid blue;
+        // border: 2px solid blue;
         padding: 1rem;
         font-size: 2rem;
         font-weight: 550;
+    }
+    hr {
+        width: 95%;
+        margin: 0 auto;
+    }
+    p {
+        padding: 1rem;
+        flex-grow: 1;
+        // border: 1px solid red;
+    }
+    a {
+        // border: 1px solid red;  
+        padding: 0.25rem 0.5rem;
+        text-align: right;
+        font-size: 1rem;
+        text-decoration: none;
+        i {
+            // border: 1px solid red;
+            // height: 100%;
+        }
     }
 }
