@@ -10,27 +10,24 @@ export const ContactForm = () => {
           Interested in working with me? Fill out some info and I'll be in touch
           shortly. Can't wait to hear from you!
         </p>
-        <p style={{ color: "red" }}>
-          This section is still in development, the form doesn't work yet
-        </p>
       </div>
       <div className="right-wrapper">
-        <form action="#">
+        <form action="https://formspree.io/f/xpwpapgr" method="POST">
           <div className="name-wrapper">
             <label htmlFor="FirstName" className="first-name">
               First Name
-              <input type="text" placeholder="John" />
+              <input type="text" placeholder="John" name="First_name" />
             </label>
             <label htmlFor="LastName" className="last-name">
               Last Name
-              <input type="text" placeholder="Doe" />
+              <input type="text" placeholder="Doe" name="Last_name" />
             </label>
           </div>
           <label htmlFor="email" className="email">
             Email
             <input
               type="email"
-              name="email"
+              name="Email"
               required
               placeholder="example@something.com"
             />
@@ -39,7 +36,7 @@ export const ContactForm = () => {
           <label htmlFor="message" className="message">
             Message
             <textarea
-              name="message"
+              name="Message"
               id=""
               placeholder="Enter your message..."
             ></textarea>
