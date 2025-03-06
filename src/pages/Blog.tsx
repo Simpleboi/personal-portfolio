@@ -118,8 +118,9 @@ export const Blog = () => {
       <div className="post-container">
         {blogPosts.map((post) => (
           <BlogPost
+            key={post.id}
             postName={post.postName}
-            postDesc={post.postDate}
+            postDesc={post.postDesc}
             postDate={post.postDate}
             filters={post.filters}
             image={post.image}
