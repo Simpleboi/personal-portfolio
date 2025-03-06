@@ -1,3 +1,5 @@
+import { PostOne } from "../posts/intro";
+
 export const blogPosts = [
   {
     id: 1,
@@ -7,7 +9,7 @@ export const blogPosts = [
     postDate: "January 2nd, 2025",
     filters: ["TypeScript", "Web Development"],
     image: "/assets/images/blog-post-one.jpg",
-    content: `<h1>Hello World<h1/>`
+    content: <PostOne />
   },
   {
     postName:

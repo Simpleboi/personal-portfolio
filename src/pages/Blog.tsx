@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import PostOne from "/assets/images/blog-post-one.jpg";
 import "../styles/Blog.scss";
 import { blogPosts } from "../components/postDetails";
+import "../styles/blogPost.scss";
 
 export const BlogBanner = () => {
   return (
@@ -83,7 +84,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({
   postDate = "Januaray 1st, 2025",
   filters = ["General"],
   image,
-  id
+  id,
 }) => {
   return (
     <div className="blogpost-container">
@@ -134,7 +135,7 @@ export const Blog = () => {
 };
 
 export const BlogPostDetails = () => {
-  const { id } = useParams<{ id: string }>(); // Get the post ID from the URL
+  const { id } = useParams<{ id: string }>();
   const post = blogPosts.find((post) => post.id.toString() === id);
 
   if (!post) {
@@ -143,9 +144,21 @@ export const BlogPostDetails = () => {
 
   return (
     <div className="blogpost-details">
-      <h1>{post.postName}</h1>
-      <img src={post.image} alt={post.postName} />
-      <h2>{post.postDate}</h2>
+      <div className="go-back">
+        <a href="../">
+          <i className="bx bx-left-arrow-alt"></i>Go Back
+        </a>
+      </div>
+      <hr />
+      <h1 className="current-post-name">{post.postName}</h1>
+      <figure className="img-container">
+        <img
+          src={post.image}
+          alt={post.postName}
+          className="current-post-img"
+        />
+      </figure>
+      <h2 className="current-post-date">{post.postDate}</h2>
       <div className="filters">
         {post.filters.map((filter, index) => (
           <span key={index} className="filter">
@@ -153,10 +166,10 @@ export const BlogPostDetails = () => {
           </span>
         ))}
       </div>
+      <hr />
       <div
         className="post-content"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      ></div>
+      >{[post.content]}</div>
     </div>
   );
 };

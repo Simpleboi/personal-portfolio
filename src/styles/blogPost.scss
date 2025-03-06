@@ -1,0 +1,79 @@
+@use "./plug" as p;
+
+.blogpost-details {
+  background-color: p.$primary-bg;
+}
+
+.go-back {
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+
+  a {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+}
+
+.current-post-name {
+  padding: 2rem;
+  font-size: 2.5rem;
+  @include p.flexCenter();
+  font-weight: 550;
+  text-align: center;
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  img {
+    width: 80%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+  }
+}
+
+.current-post-date {
+  text-align: center;
+  font-weight: 550;
+  padding: 1rem;
+}
+
+.filters {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+
+  .filter {
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: none;
+    background-color: p.$accent-second-bg;
+    color: p.$primary-bg;
+    cursor: pointer;
+  }
+}
+
+hr {
+    width: 85%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: black;
+}
+
+.post-content {
+    padding: 1rem;
+}
