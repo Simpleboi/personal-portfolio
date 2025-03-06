@@ -52,6 +52,7 @@
 .filters {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 1rem;
@@ -68,12 +69,23 @@
 }
 
 hr {
-    width: 85%;
-    margin: 0 auto;
-    height: 2px;
-    background-color: black;
+  width: 85%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: black;
 }
 
 .post-content {
+  padding: 1rem;
+
+  p {
+    // border: 1px solid red;
     padding: 1rem;
+    font-size: 1.3rem;
+  }
+
+  hr {
+    width: 85%;
+    margin: 0 auto;
+  }
 }

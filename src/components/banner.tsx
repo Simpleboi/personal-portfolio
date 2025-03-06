@@ -1,7 +1,8 @@
 import "../styles/banner.scss";
+import { Link } from "react-router-dom";
 
 export const BannerBTN: React.FC = () => {
-  return <button className="banner-btn">Contact Me</button>;
+  return <Link to="/contact" className="banner-btn">Contact Me</Link>;
 };
 
 export interface BannerProps {

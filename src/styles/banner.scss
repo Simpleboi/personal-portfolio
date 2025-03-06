@@ -12,11 +12,9 @@ header {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    // border: 2px solid blueviolet;
 
     h2 {
       color: p.$primary-bg;
-      // border: 1px solid red;
       padding: 10px;
     }
 
@@ -25,11 +23,10 @@ header {
       font-weight: 400;
       color: p.$primary-bg;
       text-align: center;
-      padding: 10px;
-      // border: 1px solid red;
+      padding: p.rem(10px);
 
       span {
-        color: #4ABF66;
+        color: #4abf66;
       }
     }
 
@@ -74,18 +71,19 @@ header {
 }
 
 .bannerBTN-container {
-  margin-top: 20px;
+  margin-top: 2.5rem;
   // border: 1px solid red;
   text-align: center;
 }
 
 .banner-btn {
   border: 1px solid p.$primary-bg;
-  padding: 20px 35px;
-  font-size: 20px;
+  padding: p.rem(20px) p.rem(35px);
+  font-size: 1.25rem;
   background-color: transparent;
   color: p.$main-color;
   border-radius: p.$button-bdr;
+  text-decoration: none;
 }
 
 .banner-btn:hover {
