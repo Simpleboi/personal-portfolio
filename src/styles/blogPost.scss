@@ -11,7 +11,7 @@
 
   a {
     height: 100%;
-    width: 10%;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,5 +87,9 @@ hr {
   hr {
     width: 85%;
     margin: 0 auto;
+  }
+
+  span {
+    color: p.$main-color;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/about.scss";
-import PFP from "/assets/images/profile.jpg";
+import PFP from "/assets/images/logo.jpg";
 import { Nav } from "../components/nav";
 import { Skills } from "./skills";
 

@@ -28,7 +28,7 @@ export const Banner: React.FC<BannerProps> = () => {
               <i className="bx bxl-instagram"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/nathaniel-eureste-12641220a/"
+              href="#"
               target="_blank"
             >
               <i className="bx bxl-linkedin"></i>
