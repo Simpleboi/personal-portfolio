@@ -103,8 +103,7 @@ export const PostOne = () => {
         <br />
         <hr />
         <br />
-        Outside of programming, my life consists of spending quality time with
-        my girlfriend, Haley, my two beloved cats: August & Winter, and my close
+        Outside of programming, my life consists of spending quality time with my two beloved cats: August & Winter, and my close
         friends whenever I can carve out the time. I also find joy in unwinding
         through video games. I'm a big fan of shooters like Call of Duty and
         Apex Legends, but I also enjoy the games like Minecraft and Geometry
