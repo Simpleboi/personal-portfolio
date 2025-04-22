@@ -60,6 +60,9 @@ export const MainNav = () => {
         <Link to="/about">About</Link>
       </li>
       <li>
+        <Link to="/testimonials">Testimonials</Link>
+      </li>
+      <li>
         <Link to="/blog">Blog</Link>
       </li>
       <li>

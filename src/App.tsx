@@ -7,6 +7,7 @@ import { Blog } from "./pages/Blog";
 import { Routes, Route } from "react-router-dom";
 import { BlogPostDetails } from "./pages/Blog";
 import { Portfolio } from "./pages/Portfolio";
+import { Testimonials } from "./pages/Testimonials";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/testimonials" element={<Testimonials />} />
       {/* Add this before any catchall route */}
       {import.meta.env.VITE_TEMPO && (
         <Route path="/tempobook/*" element={null} />
