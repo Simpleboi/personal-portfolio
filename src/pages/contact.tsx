@@ -123,15 +123,15 @@ export const ContactForm = () => {
         <div className="contact-info">
           <div className="contact-item">
             <i className="bx bx-envelope"></i>
-            <span>example@email.com</span>
+            <span>n8thegr8.jsx@email.com</span>
           </div>
           <div className="contact-item">
-            <i className="bx bx-phone"></i>
-            <span>(123) 456-7890</span>
+            <i className='bx bxl-instagram'></i>
+            <span>@n8.jsx</span>
           </div>
           <div className="contact-item">
             <i className="bx bx-map"></i>
-            <span>New York, NY</span>
+            <span>Houston, TX</span>
           </div>
         </div>
       </div>

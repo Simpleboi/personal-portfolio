@@ -1,10 +1,9 @@
 @import "./plug";
 
 .testimonials-container {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
-  background-color: $primary-bg;
+  padding: 6rem 2rem;
+  background-color: $accent-second-bg;
   min-height: 100vh;
 
   .testimonials-header {
@@ -13,7 +12,7 @@
 
     h1 {
       font-size: rem(36px);
-      color: $text-color;
+      color: $primary-bg;
       margin-bottom: 1rem;
       position: relative;
       display: inline-block;
@@ -32,7 +31,7 @@
 
     p {
       font-size: rem(18px);
-      color: $bright-three;
+      color: $primary-bg;
       max-width: 700px;
       margin: 1.5rem auto 0;
     }
@@ -42,6 +41,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
+    max-width: 1200px;
 
     @media (max-width: $tablet) {
       grid-template-columns: 1fr;
