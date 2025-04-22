@@ -253,7 +253,7 @@
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
           &:hover {
-            background-color: darken(p.$accent-main, 10%);
+            background-color: p.$accent-main;
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
           }
