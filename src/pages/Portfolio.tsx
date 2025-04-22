@@ -53,16 +53,35 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({
   desc,
 }) => {
   return (
-    <div className="port-card-container">
-      <figure className="port-image">
-        <img src={image} alt="" />
-      </figure>
-      <h2>{title}</h2>
-      <hr />
-      <p>{desc}</p>
-      <a href={link} target="_blank">
-        Learn more <i className="bx bx-right-arrow-alt"></i>
-      </a>
+    <div className="portfolio-card">
+      <div className="portfolio-card__image-container">
+        <img src={image} alt={title} className="portfolio-card__image" />
+        <div className="portfolio-card__overlay"></div>
+      </div>
+      <div className="portfolio-card__content">
+        <h3 className="portfolio-card__title">{title}</h3>
+        <p className="portfolio-card__description">{desc}</p>
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="portfolio-card__button"
+        >
+          <span>View Project</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
     </div>
   );
 };
@@ -76,7 +95,7 @@ export const Portfolio = () => {
           My Personal <span>&lt;Projects/&gt;</span>
         </h1>
       </div>
-      <div className="port-items">
+      <div className="portfolio-grid">
         {PortfolioItems.map((element, index) => (
           <PortfolioCard
             key={index}

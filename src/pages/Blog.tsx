@@ -1,23 +1,28 @@
+import React from "react";
 import { Nav } from "../components/nav";
 import { useParams, Link } from "react-router-dom";
 import PostOne from "/assets/images/blog-post-one.jpg";
 import "../styles/Blog.scss";
 import { blogPosts } from "../components/postDetails";
 import "../styles/blogPost.scss";
+import BlogPostCard from "../components/BlogPostCard";
 
 export const BlogBanner = () => {
   return (
     <div className="blogBanner-container">
-      <h4>Welcome to my blog :D</h4>
-      <h1>
-        Thoughts & <span>&lt;Insights/&gt;</span>
-      </h1>
-      <h2>
-        Sharing my <span>&lt;Journey/&gt;</span> through web development,
-        Technology, and life
-      </h2>
-      <div>
-        <i className="bx bx-chevron-down"></i>
+      <div className="blog-banner-content">
+        <span className="welcome-text">Welcome to my blog</span>
+        <h1 className="blog-title">
+          Thoughts & <span className="highlight">&lt;Insights/&gt;</span>
+        </h1>
+        <p className="blog-subtitle">
+          Sharing my <span className="highlight">&lt;Journey/&gt;</span> through
+          web development, technology, and life
+        </p>
+        <div className="scroll-indicator">
+          <span>Scroll Down</span>
+          <i className="bx bx-chevron-down"></i>
+        </div>
       </div>
     </div>
   );
@@ -33,8 +38,8 @@ export const BlogFilter = () => {
         </div>
       </div>
       <div className="filter-bottom">
-        {Filters.map((element) => {
-          return <button>{element}</button>;
+        {Filters.map((element, index) => {
+          return <button key={index}>{element}</button>;
         })}
       </div>
     </section>
@@ -78,56 +83,43 @@ export interface BlogPostProps {
   id: number;
 }
 
-export const BlogPost: React.FC<BlogPostProps> = ({
-  postName = "Post Name",
-  postDesc = "A basic Description",
-  postDate = "Januaray 1st, 2025",
-  filters = ["General"],
-  image,
-  id,
-}) => {
-  return (
-    <div className="blogpost-container">
-      <figure>
-        <img src={image || PostOne} alt="" />
-      </figure>
-      <div className="filter-container">
-        <ul>
-          {filters.map((filter, index) => (
-            <button key={index}>{filter}</button>
-          ))}
-        </ul>
-      </div>
-      <h1>{postName}</h1>
-      <p>{postDesc}</p>
-      <h2>{postDate}</h2>
-      <div className="read-full-post">
-        <Link to={`/blog/${id}`} className="btn-link">
-          <button className="rfp">Read Full Post</button>
-        </Link>
-      </div>
-    </div>
-  );
-};
-
 export const Blog = () => {
+  const [searchTerm, setSearchTerm] = React.useState("");
+
+  const filteredPosts =
+    searchTerm.trim() === ""
+      ? blogPosts
+      : blogPosts.filter((post) =>
+          post.postName.toLowerCase().includes(searchTerm.toLowerCase()),
+        );
+
+  const handleSearch = (term: string) => {
+    setSearchTerm(term);
+  };
+
   return (
     <section id="blog">
       <Nav />
       <BlogBanner />
-      <BlogFilter />
+      <BlogFilter onSearch={handleSearch} />
       <div className="post-container">
-        {blogPosts.map((post) => (
-          <BlogPost
-            key={post.id}
-            postName={post.postName}
-            postDesc={post.postDesc}
-            postDate={post.postDate}
-            filters={post.filters}
-            image={post.image}
-            id={post.id}
-          />
-        ))}
+        {filteredPosts.length > 0 ? (
+          filteredPosts.map((post) => (
+            <BlogPostCard
+              key={post.id}
+              postName={post.postName}
+              postDesc={post.postDesc}
+              postDate={post.postDate}
+              filters={post.filters}
+              image={post.image}
+              id={post.id}
+            />
+          ))
+        ) : (
+          <div className="no-results">
+            <h3>No posts found matching "{searchTerm}"</h3>
+          </div>
+        )}
       </div>
       <BlogNewsLetter />
     </section>
@@ -167,9 +159,7 @@ export const BlogPostDetails = () => {
         ))}
       </div>
       <hr />
-      <div
-        className="post-content"
-      >{[post.content]}</div>
+      <div className="post-content">{[post.content]}</div>
     </div>
   );
 };
