@@ -81,6 +81,19 @@ export const AboutCard: React.FC = () => {
           working with me, <a href="mailto:n8ther8.jsx@gmail.com">reach out</a>.
           I'm always looking for opportunities to grow, build, and push the
           limits of what's possible.
+          <br />
+          <br />
+          <div className="resume-section">
+            <h2>Resume / CV</h2>
+            <p>Want to learn more about my experience and qualifications?</p>
+            <a
+              href="/assets/resume/nathaniel_paz_resume.pdf"
+              download="Nathaniel_Paz_Resume.pdf"
+              className="resume-download-btn"
+            >
+              Download Resume (PDF)
+            </a>
+          </div>
         </p>
       </div>
       <div className="about-card-image">
