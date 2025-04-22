@@ -1,5 +1,5 @@
 import "./styles/index.scss";
-import { Home } from "./pages/hero";
+// import { Home } from "./pages/hero";
 import { Skills } from "./pages/skills";
 import { About } from "./pages/about";
 import { Contact } from "./pages/contact";
@@ -8,6 +8,8 @@ import { Routes, Route } from "react-router-dom";
 import { BlogPostDetails } from "./pages/Blog";
 import { Portfolio } from "./pages/Portfolio";
 import { Testimonials } from "./pages/Testimonials";
+import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
 
 function App() {
   return (

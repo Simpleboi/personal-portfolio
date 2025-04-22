@@ -6,8 +6,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
+  height: 80vh;
+  gap: 2rem;
 
   .banner-container {
     display: flex;
@@ -93,8 +96,10 @@ header {
 }
 
 .bannerBTN-container {
-  margin-top: 2.5rem;
+  margin: 2.5rem 0rem;
   text-align: center;
+  border: 1px solid blue;
+  height: auto;
 }
 
 .banner-btn {
