@@ -1,17 +1,21 @@
 @use "./plug" as p;
 
 header {
+  width: 100%;
   margin-top: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  // border: 1px solid red;
+  position: relative;
+  overflow: hidden;
 
   .banner-container {
-    width: 70%;
     display: flex;
     flex-direction: column;
+    width: 70%;
     gap: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
 
     h2 {
       color: p.$primary-bg;
@@ -19,8 +23,8 @@ header {
     }
 
     .banner-name {
-      font-size: clamp(55px, 10vw, 90px);
-      font-weight: 400;
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 600;
       color: p.$primary-bg;
       text-align: center;
       padding: p.rem(10px);
@@ -31,7 +35,7 @@ header {
     }
 
     .banner-header {
-      font-weight: 350;
+      font-weight: 500;
       text-align: center;
       font-size: clamp(20px, 3vw, 26px);
     }
@@ -45,17 +49,35 @@ header {
   }
 
   .social-container {
-    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
     .social-inner-container {
-      width: 50%;
-      margin: auto;
       display: flex;
-      justify-content: space-evenly;
+      gap: 2rem;
+      justify-content: center;
       align-items: center;
-      // border: 1px solid red;
+      flex-wrap: wrap;
 
       a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-color: none;
+        color: #ffffff;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: p.$accent-main;
+          color: p.$main-color;
+          transform: translateY(-5px);
+        }
         i {
           font-size: 30px;
           color: p.$primary-bg;
@@ -90,16 +112,64 @@ header {
   transition: all 0.2s ease;
 }
 
-@media screen and (max-width: p.$tablet) {
+/* Media Queries */
+@media screen and (max-width: 768px) {
   header {
     .banner-container {
       width: 100%;
     }
 
-    .social-container {
-      .social-inner-container {
-        width: 80%;
-      }
+    .banner-name {
+      font-size: 3rem;
     }
+
+    .banner-subheading {
+      font-size: 1.2rem;
+    }
+  }
+
+  .social-inner-container {
+    gap: 1rem;
+
+    a {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-container {
+    padding: 0 1rem;
+  }
+
+  .banner-header {
+    font-size: 1rem;
+  }
+
+  .banner-name {
+    // font-size: 1rem;
+    border: 1px solid red;
+  }
+
+  .banner-subheading {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .social-inner-container {
+    gap: 0.8rem;
+
+    a {
+      width: 2.2rem;
+      height: 2.2rem;
+      font-size: 1rem;
+    }
+  }
+
+  .banner-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
   }
 }
