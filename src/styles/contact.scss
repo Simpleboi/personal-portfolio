@@ -2,156 +2,264 @@
 
 .contact-container {
   background-color: p.$accent-second-bg;
+  min-height: 100vh;
 }
 
 .contact {
-  height: 90vh;
+  min-height: 90vh;
   background-color: p.$accent-second-bg;
   display: flex;
+  padding: 2rem 0;
 
   .left-wrapper {
     width: 50%;
-    // border: 1px solid red;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    padding: 0 4rem;
 
     h1 {
-      font-size: 3rem;
-      font-weight: 400;
+      font-size: 3.5rem;
+      font-weight: 600;
       color: p.$primary-bg;
+      margin-bottom: 0.5rem;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60px;
+        height: 4px;
+        background-color: p.$bright-two;
+        border-radius: 2px;
+      }
     }
+
     p {
-      width: 60%;
+      width: 80%;
       font-size: 1.25rem;
       color: p.$primary-bg;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      margin-top: 2rem;
+      width: 100%;
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        color: p.$primary-bg;
+
+        i {
+          font-size: 1.5rem;
+          margin-right: 1rem;
+          color: p.$bright-two;
+        }
+
+        span {
+          font-size: 1.1rem;
+        }
+      }
     }
   }
 
   .right-wrapper {
     width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+
+    .success-message {
+      display: flex;
+      align-items: center;
+      background-color: rgba(76, 175, 80, 0.2);
+      color: #2e7d32;
+      padding: 1rem;
+      border-radius: p.$button-bdr;
+      margin-bottom: 1.5rem;
+      width: 80%;
+
+      i {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
 
     form {
-      padding-top: 1rem;
-      height: 90%;
+      padding: 2rem;
       width: 80%;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
 
       .name-wrapper {
         display: flex;
-        height: 20%;
-        gap: 1rem;
-        margin-bottom: 2rem;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
 
-        .first-name {
-          //   border: 1px solid blue;
-          display: flex;
-          flex-direction: column;
-          width: 50%;
-          font-size: 1.5rem;
-          color: p.$primary-bg;
-          gap: 10px;
-
-          input {
-            width: 100%;
-            height: 100%;
-            border-radius: p.$button-bdr;
-            border: none;
-            background-color: p.$primary-bg;
-            padding-left: 1rem;
-          }
-          input:hover {
-            box-shadow: p.$boxShadow;
-          }
-        }
+        .first-name,
         .last-name {
-          //   border: 1px solid blue;
           display: flex;
           flex-direction: column;
           width: 50%;
-          font-size: 1.5rem;
+          font-size: 1rem;
           color: p.$primary-bg;
-          gap: 10px;
+          gap: 8px;
 
           input {
             width: 100%;
-            height: 100%;
+            height: 50px;
             border-radius: p.$button-bdr;
-            border: none;
+            border: 1px solid transparent;
             background-color: p.$primary-bg;
-            padding-left: 1rem;
-          }
-          input:hover {
-            box-shadow: p.$boxShadow;
+            padding: 0 1rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+
+            &:focus {
+              outline: none;
+              border-color: p.$bright-two;
+              box-shadow: 0 0 0 2px rgba(p.$bright-two, 0.2);
+            }
+
+            &.error {
+              border-color: #f44336;
+              background-color: rgba(244, 67, 54, 0.05);
+            }
           }
         }
       }
+
       .email {
-        // border: 1px solid blue;
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 20%;
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: p.$primary-bg;
-        gap: 10px;
+        gap: 8px;
         margin-bottom: 1.5rem;
 
         input {
           width: 100%;
-          height: 100%;
+          height: 50px;
           border-radius: p.$button-bdr;
           background-color: p.$primary-bg;
-          border: none;
-          padding-left: 1rem;
-        }
-        input:hover {
-          box-shadow: p.$boxShadow;
+          border: 1px solid transparent;
+          padding: 0 1rem;
+          font-size: 1rem;
+          transition: all 0.3s ease;
+
+          &:focus {
+            outline: none;
+            border-color: p.$bright-two;
+            box-shadow: 0 0 0 2px rgba(p.$bright-two, 0.2);
+          }
+
+          &.error {
+            border-color: #f44336;
+            background-color: rgba(244, 67, 54, 0.05);
+          }
         }
       }
+
       .message {
-        // border: 1px solid blue;
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 35%;
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: p.$primary-bg;
-        gap: 10px;
+        gap: 8px;
 
         textarea {
           width: 100%;
-          height: 100%;
+          min-height: 150px;
           border-radius: p.$button-bdr;
           background-color: p.$primary-bg;
-          border: none;
+          border: 1px solid transparent;
           padding: 1rem;
+          font-size: 1rem;
+          resize: vertical;
+          transition: all 0.3s ease;
+
+          &:focus {
+            outline: none;
+            border-color: p.$bright-two;
+            box-shadow: 0 0 0 2px rgba(p.$bright-two, 0.2);
+          }
+
+          &.error {
+            border-color: #f44336;
+            background-color: rgba(244, 67, 54, 0.05);
+          }
         }
-        textarea:active {
-          box-shadow: p.$boxShadow;
-        }
+      }
+
+      .error-message {
+        color: #f44336;
+        font-size: 0.8rem;
+        margin-top: 4px;
       }
 
       .submit {
-        // border: 1px solid red;
-        width: 35%;
+        width: 100%;
         margin-top: 2rem;
-        height: 10%;
+        height: 50px;
         border-radius: p.$button-bdr;
-        background-color: p.$text-color;
+        background-color: p.$bright-two;
         color: p.$primary-bg;
         border: none;
-        padding: 0.5rem;
         font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: darken(p.$bright-two, 10%);
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(p.$bright-two, 0.3);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+
+        &:disabled {
+          background-color: #cccccc;
+          cursor: not-allowed;
+          transform: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    .left-wrapper {
+      padding: 0 2rem;
+
+      h1 {
+        font-size: 3rem;
       }
 
-      .submit:hover {
-        background-color: p.$bright-two;
-        transition: all 0.25s ease;
+      p {
+        width: 90%;
       }
     }
   }
@@ -160,26 +268,58 @@
 @media screen and (max-width: 768px) {
   .contact {
     flex-direction: column;
-    height: 130vh;
+    padding: 2rem 1rem;
 
     .left-wrapper {
       width: 100%;
-      height: 30%;
+      padding: 0 1rem 2rem 1rem;
+      align-items: center;
+      text-align: center;
+
+      h1:after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      p {
+        width: 100%;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     .right-wrapper {
       width: 100%;
-      height: 70%;
+      padding: 0;
+
+      form {
+        width: 100%;
+        padding: 1.5rem;
+      }
+
+      .success-message {
+        width: 100%;
+      }
     }
   }
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 480px) {
   .contact {
     .right-wrapper {
       form {
-        .submit {
-          width: 100%;
+        .name-wrapper {
+          flex-direction: column;
+          gap: 1rem;
+
+          .first-name,
+          .last-name {
+            width: 100%;
+          }
         }
       }
     }

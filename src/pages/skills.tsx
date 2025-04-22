@@ -1,16 +1,13 @@
 import React from "react";
 import "../styles/skills.scss";
-import { SkillsCardFE, SkillsCardBE, SkillsCardOther } from "../components/card";
-
+import { SkillCard } from "../components/SkillCard";
 
 export const Skills: React.FC = () => {
   return (
     <section id="skills">
       <h1 className="skills-header">&lt;Skills/&gt;</h1>
       <div className="skills-wrapper">
-        <SkillsCardFE />
-        <SkillsCardBE />
-        <SkillsCardOther />
+        <SkillCard />
       </div>
     </section>
   );
