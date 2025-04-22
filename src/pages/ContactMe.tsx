@@ -151,6 +151,7 @@ export const ContactForm = () => {
                 id="firstName"
                 name="firstName"
                 placeholder="John"
+                required
                 value={formData.firstName}
                 onChange={handleChange}
                 className={errors.firstName ? "error" : ""}
@@ -166,6 +167,7 @@ export const ContactForm = () => {
                 id="lastName"
                 name="lastName"
                 placeholder="Doe"
+                required
                 value={formData.lastName}
                 onChange={handleChange}
                 className={errors.lastName ? "error" : ""}
@@ -198,6 +200,7 @@ export const ContactForm = () => {
               id="message"
               name="message"
               placeholder="Enter your message..."
+              required
               value={formData.message}
               onChange={handleChange}
               className={errors.message ? "error" : ""}

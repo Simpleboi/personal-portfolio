@@ -40,11 +40,6 @@ const SkillIcon: React.FC<{ url: string; name: string; level?: number }> = ({
       </div>
       <div className="skill-details">
         <span className="skill-name">{name}</span>
-        <div className="skill-level">
-          {[...Array(5)].map((_, i) => (
-            <div key={i} className={`level-dot ${i < level ? "filled" : ""}`} />
-          ))}
-        </div>
       </div>
     </div>
   );

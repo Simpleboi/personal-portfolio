@@ -35,17 +35,19 @@ export const AboutCard: React.FC = () => {
           <br />
           <ul>
             <li>
-              <a href="https://github.com/Simpleboi/Neutron" target="_blank">
-                Neutron
+              <a href="https://github.com/Simpleboi/JournalXP" target="_blank">
+                JournalXP
               </a>{" "}
-              | A custom-built web browser made with electron.js and React
+              | A gameified mental health journaling app that
+              rewards users with XP for completing self-care tasks, tracking
+              thier mood, etc.
             </li>
             <li>
-              <a href="https://github.com/Simpleboi/SimplyPi" target="_blank">
-                SimplyPi
+              <a href="https://github.com/Simpleboi/Genesis" target="_blank">
+                Genesis
               </a>{" "}
-              | A specialized learning platform for math and computer science
-              related courses
+              | A general-purpose programming language designed with
+              a focus on web development.
             </li>
             <li>
               <a href="https://github.com/Simpleboi/sparkcss" target="_blank">
