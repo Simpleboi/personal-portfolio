@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav } from "../components/nav";
-import { useParams, Link } from "react-router-dom";
-import PostOne from "/assets/images/blog-post-one.jpg";
+import { useParams } from "react-router-dom";
+// import PostOne from "/assets/images/blog-post-one.jpg";
 import "../styles/Blog.scss";
 import { blogPosts } from "../components/postDetails";
 import "../styles/blogPost.scss";
@@ -28,12 +28,24 @@ export const BlogBanner = () => {
   );
 };
 
-export const BlogFilter = () => {
+interface BlogFilterProps {
+  onSearch: (term: string) => void;
+}
+
+export const BlogFilter: React.FC<BlogFilterProps> = ({ onSearch }) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    onSearch(event.target.value);
+  };
+
   return (
     <section className="blog-filter-container">
       <div className="filter-top">
         <div className="input-container">
-          <input type="text" placeholder="Search &lt;blog/&gt; posts..." />
+          <input
+            type="text"
+            placeholder="Search &lt;blog/&gt; posts..."
+            onChange={handleInputChange}
+          />
           <i className="bx bx-search"></i>
         </div>
       </div>
@@ -81,6 +93,7 @@ export interface BlogPostProps {
   filters?: string[];
   image?: string;
   id: number;
+  onSearch: (term: string) => void;
 }
 
 export const Blog = () => {
@@ -113,6 +126,7 @@ export const Blog = () => {
               filters={post.filters}
               image={post.image}
               id={post.id}
+              onSearch={handleSearch}
             />
           ))
         ) : (
