@@ -123,7 +123,7 @@ export const ContactForm = () => {
         <div className="contact-info">
           <div className="contact-item">
             <i className="bx bx-envelope"></i>
-            <span>n8thegr8.jsx@email.com</span>
+            <span>n8thegr8.jsx@gmail.com</span>
           </div>
           <div className="contact-item">
             <i className='bx bxl-instagram'></i>
@@ -216,7 +216,7 @@ export const ContactForm = () => {
   );
 };
 
-export const Contact = () => {
+const ContactMe = () => {
   return (
     <section className="contact-container">
       <Nav />
@@ -224,3 +224,5 @@ export const Contact = () => {
     </section>
   );
 };
+
+export default ContactMe;
