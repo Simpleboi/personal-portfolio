@@ -31,7 +31,6 @@ interface CategoryProps {
 const SkillIcon: React.FC<{ url: string; name: string; level?: number }> = ({
   url,
   name,
-  level = 3,
 }) => {
   return (
     <div className="skill-icon">
