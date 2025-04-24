@@ -2,12 +2,18 @@
 
 .blogpost-details {
   background-color: p.$primary-bg;
+  // max-width: 1200px;
+  // margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .go-back {
   height: 10vh;
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 1rem;
 
   a {
     height: 100%;
@@ -18,28 +24,60 @@
     gap: 0.5rem;
     text-decoration: none;
     font-size: 1.25rem;
+    color: p.$main-color;
+    transition: color 0.3s ease;
+    font-weight: 500;
+
+    &:hover {
+      color: darken(p.$main-color, 10%);
+    }
   }
 }
 
 .current-post-name {
-  padding: 2rem;
-  font-size: 2.5rem;
+  padding: 2rem 1rem;
+  font-size: 2.75rem;
   @include p.flexCenter();
-  font-weight: 550;
+  font-weight: 600;
   text-align: center;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: p.$main-color;
+    border-radius: 2px;
+  }
 }
 
 .img-container {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.5rem;
+  border-radius: 12px;
+  // margin: 2rem 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
   img {
-    width: 80%;
+    width: 100%;
+    border-radius: 12px;
     height: auto;
-    max-height: 500px;
-    object-fit: contain;
+    max-height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 }
 
@@ -47,6 +85,9 @@
   text-align: center;
   font-weight: 550;
   padding: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
 }
 
 .filters {
@@ -55,41 +96,133 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   gap: 1rem;
 
   .filter {
-    padding: 0.75rem;
-    border-radius: 5px;
+    padding: 0.75rem 1.25rem;
+    border-radius: 30px;
     border: none;
     background-color: p.$accent-second-bg;
     color: p.$primary-bg;
     cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      background-color: darken(p.$accent-second-bg, 10%);
+    }
   }
 }
 
 hr {
   width: 85%;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   height: 2px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 1px;
 }
 
 .post-content {
-  padding: 1rem;
+  padding: 2rem;
+  line-height: 1.8;
 
   p {
     // border: 1px solid red;
-    padding: 1rem;
-    font-size: 1.3rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.3px;
   }
 
   hr {
     width: 85%;
-    margin: 0 auto;
+    margin: 2rem auto;
   }
 
   span {
     color: p.$main-color;
+    font-weight: 600;
+  }
+
+  a {
+    color: p.$main-color;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: p.$main-color;
+    }
+  }
+
+  h2,
+  h3,
+  h4 {
+    color: #333;
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+  }
+
+  ul,
+  ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: #444;
+    }
+  }
+
+  blockquote {
+    border-left: 4px solid p.$main-color;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #555;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blogpost-details {
+    padding: 1.5rem;
+  }
+
+  .current-post-name {
+    font-size: 2.2rem;
+    padding: 1.5rem 0.5rem;
+  }
+
+  .img-container img {
+    max-height: 400px;
+  }
+
+  .post-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .current-post-name {
+    font-size: 1.8rem;
+  }
+
+  .filters .filter {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .post-content {
+    padding: 1rem;
+
+    p {
+      font-size: 1rem;
+    }
   }
 }
