@@ -230,7 +230,7 @@
         transition: all 0.3s ease;
 
         &:hover {
-          background-color: darken(p.$bright-two, 10%);
+          background-color: color-mix(in srgb, p.$bright-two 90%, black);
           transform: translateY(-2px);
           box-shadow: 0 4px 12px rgba(p.$bright-two, 0.3);
         }

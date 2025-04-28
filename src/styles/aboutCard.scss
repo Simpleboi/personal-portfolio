@@ -115,7 +115,7 @@
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
           &:hover {
-            background-color: darken(p.$main-color, 10%);
+            background-color: color-mix(in srgb, p.$main-color 90%, black);
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
           }

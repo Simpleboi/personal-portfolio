@@ -2,8 +2,6 @@
 
 .blogpost-details {
   background-color: p.$primary-bg;
-  // max-width: 1200px;
-  // margin: 0 auto;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -29,7 +27,7 @@
     font-weight: 500;
 
     &:hover {
-      color: darken(p.$main-color, 10%);
+      color: color-mix(in srgb, p.$main-color 90%, black);
     }
   }
 }
@@ -64,7 +62,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  // margin: 2rem 0;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 
   img {
@@ -113,7 +110,7 @@
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-      background-color: darken(p.$accent-second-bg, 10%);
+      background-color: color-mix(in srgb, p.$accent-second-bg 90%, black);
     }
   }
 }

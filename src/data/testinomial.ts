@@ -11,9 +11,9 @@ export const testimonials = [
   },
   {
     id: 2,
-    quote: "This is a Placeholder Testimonal",
-    name: "Name",
-    title: "Job Title",
-    image: "/assets/images/testimonials/michael.jpg",
+    quote: "Nate and I worked together in a local STEM challenge. During the coding portion, he focused on the most difficult of the prompts while the rest of us either implemented code or wrote pseudocode for the many simple prompts. He was also the President in our Computer Science club. He was always encouraging us to learn, and excited to give the week's presentation. Nate shows his passion for programing with his many side projects and truly pushes himself to be the best. He will be an asset to any team.",
+    name: "Josh Dykstra",
+    title: "Treasurer of the Computer Science Club | San Jacinto College",
+    image: sjc,
   },
 ];
