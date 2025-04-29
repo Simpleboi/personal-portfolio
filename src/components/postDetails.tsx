@@ -1,5 +1,6 @@
 import { PostOne } from "../posts/intro";
 import { Judgement } from "../posts/judgement";
+import { Burnout } from "../posts/burnout";
 
 export const blogPosts = [
   {
@@ -22,4 +23,14 @@ export const blogPosts = [
     image: "/assets/images/blog-post-one.jpg",
     content: <Judgement />,
   },
+  {
+    id: 3,
+    postName: "Don't Burn Yourself Out",
+    postDesc:
+      "Feeling drained and overwhelmed by work is a tough spot. This post explores the dangers of pushing yourself too hard and hitting burnout.",
+    postDate: "April 29th, 2025",
+    filters: ["Mental-health", "Personal", "Burnout"],
+    image: "/assets/images/burnout.jpg",
+    content: <Burnout />,
+  }
 ];
