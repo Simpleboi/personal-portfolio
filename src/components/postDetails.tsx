@@ -1,6 +1,7 @@
 import { PostOne } from "../posts/intro";
 import { Judgement } from "../posts/judgement";
 import { Burnout } from "../posts/burnout";
+import { Comparison } from "../posts/comparison";
 
 export const blogPosts = [
   {
@@ -10,7 +11,7 @@ export const blogPosts = [
       "A short post talking about why I made the blog and my goals redgarding them.",
     postDate: "March 6th, 2025",
     filters: ["Web Development", "Personal", "Nate.jsx"],
-    image: "/assets/images/blog-post-one.jpg",
+    image: "/assets/images/logo.jpg",
     content: <PostOne />,
   },
   {
@@ -32,5 +33,15 @@ export const blogPosts = [
     filters: ["Mental-health", "Personal", "Burnout"],
     image: "/assets/images/burnout.jpg",
     content: <Burnout />,
+  },
+  {
+    id: 4,
+    postName: "Comparing yourself to Others",
+    postDesc:
+      "This post talks about not comparing yourself to others and unlocking greater self-acceptance by letting go of comparisons.",
+    postDate: "April 29th, 2025",
+    filters: ["Mental-health", "Personal", "Self Love"],
+    image: "/assets/images/comparison.jpg",
+    content: <Comparison />,
   }
 ];
