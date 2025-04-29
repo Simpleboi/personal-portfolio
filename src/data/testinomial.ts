@@ -22,5 +22,12 @@ export const testimonials = [
     name: "Emmanuel Attagba",
     title: "Secretary, Computer Science Club | San Jacinto College",
     image: sjc,
+  },
+  {
+    id: 4,
+    quote: "I know Nathaniel through my Programming Fundamentals I course. He has done exceptionally well from the first day I met him in the course; his teaching style has not only helped me understand some Python concepts but understand the underlying systems that work in the computer. He is always available during class and has assisted me in understanding the labs and fundamental concepts. It is evident that Nathaniel has a clear passion for learning and assisting others, especially shown through his leadership. He is a very devoted person and has been a great resource throughout this semester and he has inspired me to put my all into what I do.",
+    name: "Joaquin Ramirez",
+    title: "Computer Science Student, COSC 1436 | San Jacinto College",
+    image: sjc,
   }
 ];
