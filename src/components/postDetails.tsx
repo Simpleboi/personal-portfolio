@@ -20,7 +20,7 @@ export const blogPosts = [
       "A small rant about a society full of sinners, judging other sinners for sinning differently",
     postDate: "April 4th, 2025",
     filters: ["Mental-health", "Personal"],
-    image: "/assets/images/blog-post-one.jpg",
+    image: "/assets/images/sinner.jpg",
     content: <Judgement />,
   },
   {

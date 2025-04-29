@@ -41,7 +41,7 @@ export const PostLayout: React.FC<PostLayoutProps> = ({
 
       <footer className="post-footer">
         <div className="back-to-blog">
-          <Link to="/blog">Back to Blog</Link>
+          <Link to="/Blog">Back to Blog</Link>
         </div>
       </footer>
     </article>

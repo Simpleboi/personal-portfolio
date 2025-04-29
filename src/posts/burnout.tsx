@@ -22,13 +22,13 @@ export const Burnout = () => {
         <br />
         <br />
         Then, inevitably, I crashed. Summer 2023 arrived, and I doubled
-        down—four summer courses and those same two jobs, each demanding my
+        down on four summer courses and those same two jobs, each demanding my
         undivided attention. Half the week I spent in all-nighters, where sleep
         became a distant memory and energy drinks blurred the lines between
         productivity and self-destruction. My body rebelled against me, my
         muscles ached, focus dissolved, and a heavy fog of agitation settled in
-        my mind. I was burned out—completely and utterly. I had the worst
-        headache known to man, my body gave up on me.
+        my mind. I was burned out, completely and utterly. I had the worst
+        headache known to man, my body gave up on me. I didn't want to believe that I was burned out but my body made it very clear when I became bedridden from overworking myself.
         <br />
         <br />
         It took that breaking point for me to realize life's beauty isn't
@@ -37,21 +37,21 @@ export const Burnout = () => {
         and derail our very purpose. I learned that balance isn't a luxury, it's
         a lifeline. Now, I pour my heart into every project from Monday through
         Thursday, then press pause. On weekends, I reclaim my time: I laugh with
-        friends, wander without an agenda, and savor the simple pleasures that
+        friends, wander without an agenda, and enjoy the simple pleasures that
         once felt forbidden.
         <br />
-        <br />I discovered that rewarding yourself isn't indulgence, it's fuel.
+        <br />I discovered that rewarding yourself isn't a punishment, it's fuel.
         By granting myself permission to unwind, I amplify my focus and passion
         when it's time to work. Rest isn't the enemy of progress; it's the
         backbone of true success. So hear me when I say: your ambition is a
-        gift, but it can become a chain. Tend to your spark wisely—nurture it
+        gift, but it can become a chain. Tend to your spark wisely, nurture it
         with rest, let it dance with balance, and watch how brightly it burns
         when you refuse to let burnout take you out.
         <br />
         <h2>Recognizing the Early Warning Signs of Burnout</h2>
         Burnout rarely arrives as a sudden explosion, it builds quietly, layer
         by layer, until you find yourself sitting on the edge. Learning to spot
-        those initial tremors can save you from tipping into a full-blown
+        those initial tremors can save you from tip-toeing into a full-blown
         collapse. In my own experience, the earliest warning signs showed up not
         in grand crises, but in small, persistent shifts in my daily life.
         <br />
@@ -70,7 +70,7 @@ export const Burnout = () => {
         hint at deeper issues. Burnout can disrupt your body's regulation of
         cortisol and melatonin. You might find yourself lying awake replaying
         to-do lists at 3 a.m., or conversely, sleeping through alarms despite
-        pressing deadlines. Either extreme, too little or too much sleep,
+        pressing deadlines. Either way, too little or too much sleep,
         signals that your nervous system is out of sync and needs intervention.
         <br />
         <br />
@@ -109,7 +109,7 @@ export const Burnout = () => {
         acceptable work load to please my ambitions and also please my free
         time.
         <h2>Overcoming Setbacks and Failures</h2>
-        Even the most well-intentioned self-care plan will hit fan, balance
+        Even the most well-intentioned self-care plan will hit the fan, balance
         isn't a straight path upward, but a winding road with speed bumps and
         detours. I've learned firsthand that relapses don't signal failure;
         they're simply opportunities to recalibrate and relax.
@@ -134,7 +134,7 @@ export const Burnout = () => {
         get lost in its pages.
         <br />
         <br />
-        That simple act—shifting from “I blew it” to “Here's my fix”, did more
+        That simple act of shifting from “I blew it” to “Here's my fix”, did more
         than replenish my energy. It reminded me that balance is dynamic. Even
         when plans derail, small course-corrections keep you moving forward.
         <br />
@@ -146,9 +146,44 @@ export const Burnout = () => {
           <strong>Document What Happened</strong> | Capture the “what” and the
           “why” without shame. Acknowledgment gives you insight.
         </li>
-        <li></li>
-        <li></li>
+        <li>
+          <strong>Choose One Immediate Remedy</strong> | It doesn't have to be
+          big, a simple five-minute breathing exercise, or a walk around the
+          block will suffice
+        </li>
+        <li>
+          <strong>Reaffirm Your Commitment</strong> | Write or speak a simple
+          affirmation: “I deserve rest, and I'll build it back in.”
+        </li>
+        <li>
+          <strong>Reflect on the Progress</strong> | A day or two after your
+          reset, note how you feel physically and mentally. Celebrate small
+          wins, your resilience, your awareness, your ability to adapt.
+        </li>
       </ul>
+      <p>
+        Setbacks are inevitable, but they're also reversible. By approaching
+        them with curiosity and compassion, you transform every relapse into a
+        chance for deeper balance and stronger self-care habits.
+        <br />
+        <br />
+        As you wrap up this journey from overwhelm to ownership, remember that
+        true success isn't measured by how many tasks you check off, but by how
+        fiercely you protect your well-being along the way. I'm no kinesiology guru, this is simply my own experiences and examples to help others overcome burnout just as it helped me. 
+        <br />
+        <br />
+        When life throws you off
+        course, turn reflection into real change. Now it's your turn to
+        put these insights into action: honor your signals, plan your pauses,
+        and forgive yourself when you stumble. Treat balance as a practice
+        rather than a perfect destination, and you'll keep your passion alive, your
+        mind clear, and your heart open to both achievement and joy. Here's to
+        tending your spark with intention, so it continues to light your
+        path, bright. Have a blessed day💚
+        <br />
+        - <span>&lt;Nate&gt;</span>
+
+      </p>
     </div>
   );
 };
