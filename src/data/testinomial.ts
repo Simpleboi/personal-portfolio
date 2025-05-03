@@ -29,5 +29,12 @@ export const testimonials = [
     name: "Joaquin Ramirez",
     title: "Computer Science Student, COSC 1436 | San Jacinto College",
     image: sjc,
+  },
+  {
+    id: 5,
+    quote: "Nate was an exceptional supplemental instructor during my Fundamentals 1 class. He arrived on time and was usually there before the class started. Nate covered a few of the lessons with us and I would often see him hunched over someone's screen after class, explaining to them the code or answering their questions if they had any difficulties with it. He was very helpful overall, both to me and to the class in general. At the beginning of the semester, he saw me struggling to solve my labs but the professor was occupied with another student so he immediately asked if I needed help, spending several minutes explaining to me what I was confused about and giving me time to attempt to solve the problems on my own. ", 
+    name: "Aisha Saleh",
+    title: "Computer Science Student, COSC 1436 | San Jacinto College",
+    image: sjc,
   }
 ];
