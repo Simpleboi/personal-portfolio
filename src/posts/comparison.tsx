@@ -2,7 +2,7 @@ export const Comparison = () => {
   return (
     <div className="post-four">
       <p>
-        “<em>Comparison is the thief of joy</em>”, I'd heard that line tossed
+        “<em><b>Comparison is the thief of joy</b></em>”, I'd heard that line tossed
         around, but I never truly understood its weight until it cut me down to
         size personally. In the world of programming, where every student races
         to write cleaner code, land the hottest internships, and master
@@ -11,7 +11,7 @@ export const Comparison = () => {
         <br />
         <br />
         For years, I thought programming was a competition: who could submit the
-        cleanest pull request, who could grab a lavish internship first, who
+        cleanest pull request, who could grab a lavish internship first, or who
         could write the most elegant data-structure solution under pressure.
         During my time in class and club, I'd see this play out. Club meetings
         turned into unspoken contests, students quietly ranking themselves
@@ -47,7 +47,7 @@ export const Comparison = () => {
         <br />
         <br />
         And then Derrick, my friend and collaborator, got the dream job: a
-        professorship teaching the very courses we once pored over together. Of
+        professorship teaching the very courses we once looked over together. Of
         course I celebrated him. He'd worked hard and deserved it. But inside, I
         felt a cold disappointment that I couldn't shake. I replayed every late
         night I'd spent buried in textbooks, every leadership meeting I'd
@@ -58,7 +58,7 @@ export const Comparison = () => {
         No amount of hustle could close the gap I'd pictured in my head, because
         that gap existed only in comparison. My brain had trained itself to
         spotlight the differences, his early teaching award, my still-pending
-        paper; his polished lecture slides, my half-finished module. Meanwhile,
+        paper; his polished lecture slides, and my half-finished module. Meanwhile,
         it ignored the countless ways I'd grown: the gratitude from students I'd
         mentored, the late-night breakthrough when I finally refactored that
         monstrosity of a function, the quiet confidence I felt when I solved a
@@ -68,7 +68,7 @@ export const Comparison = () => {
         When I became a supplemental instructor, I watched this cycle unfold in
         real time. I'd stand before a room full of eager Computer Science
         students, explaining a tricky concept, only to see the doubt flicker
-        across their eyes. “I'm not smart enough,” they'd think. But that's
+        across their eyes. “<em>I'm not smart enough,</em>” they'd think. But that's
         simply not true. Many of us, especially those of us between 18 and 24,
         are still discovering who we are and where we want to go. Life isn't a
         sprint, it's a marathon, and each of us sets our own pace.
@@ -108,7 +108,7 @@ export const Comparison = () => {
         Your journey will never mirror anyone else's, and that's its greatest
         gift. When you free yourself from the comparison trap, you unlock your
         own potential, your creativity, your resilience, and your authentic joy.
-        So the next time you feel that familiar lie of “I'm not enough,”
+        So the next time you feel that familiar lie of “<em>I'm not enough,</em>”
         remember, you're not running someone else's race. You're weaving your
         own story, one deliberate step at a time. Embrace each victory, lean
         into each lesson, and trust that your path, ever winding, uniquely yours

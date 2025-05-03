@@ -1,7 +1,6 @@
 import React from "react";
 import { Nav } from "../components/nav";
 import { useParams } from "react-router-dom";
-// import PostOne from "/assets/images/blog-post-one.jpg";
 import "../styles/Blog.scss";
 import { blogPosts } from "../components/postDetails";
 import "../styles/blogPost.scss";
@@ -103,7 +102,7 @@ export const Blog = () => {
     searchTerm.trim() === ""
       ? blogPosts
       : blogPosts.filter((post) =>
-          post.postName.toLowerCase().includes(searchTerm.toLowerCase()),
+          post.postName.toLowerCase().includes(searchTerm.toLowerCase())
         );
 
   const handleSearch = (term: string) => {
@@ -174,6 +173,23 @@ export const BlogPostDetails = () => {
       </div>
       <hr />
       <div className="post-content">{[post.content]}</div>
+      <div className="social-share">
+        <h3>Share this post</h3>
+        <div className="share-buttons">
+          <button className="share-button twitter">
+            <i className="bx bxl-twitter"></i>
+          </button>
+          <button className="share-button facebook">
+            <i className="bx bxl-facebook"></i>
+          </button>
+          <button className="share-button linkedin">
+            <i className="bx bxl-linkedin"></i>
+          </button>
+          <button className="share-button copy-link">
+            <i className="bx bx-link"></i>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
