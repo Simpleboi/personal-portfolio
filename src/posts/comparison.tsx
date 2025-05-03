@@ -166,7 +166,10 @@ export const Comparison = () => {
         gratitude, celebrating small wins, choosing supportive company, and
         affirming your worth—you'll cultivate a deep well of self-love. And from
         that place of inner confidence, there's no room left for comparison to
-        steal your joy.
+        steal your joy. Have a blessed day 💚
+        <br />
+        <br />
+        - <span>&lt;Nate/&gt;</span> 
       </p>
     </div>
   );

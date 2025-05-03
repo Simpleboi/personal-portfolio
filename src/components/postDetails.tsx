@@ -2,6 +2,7 @@ import { PostOne } from "../posts/intro";
 import { Judgement } from "../posts/judgement";
 import { Burnout } from "../posts/burnout";
 import { Comparison } from "../posts/comparison";
+import { Tailwind } from "../posts/Tailwind";
 
 export const blogPosts = [
   {
@@ -43,5 +44,15 @@ export const blogPosts = [
     filters: ["Mental-health", "Personal", "Self Love"],
     image: "/assets/images/comparison.jpg",
     content: <Comparison />,
+  },
+  {
+    id: 5,
+    postName: "Why I switched from SASS to TailwindCSS",  
+    postDesc:
+      "This post talks about why I switched over my styles from SASS to TailwindCSS in all my future projects",
+    postDate: "May 2nd, 2025",
+    filters: ["Web Development", "SASS", "TailwindCSS"],
+    image: "/assets/images/tailwind.png",
+    content: <Tailwind />,
   }
 ];
