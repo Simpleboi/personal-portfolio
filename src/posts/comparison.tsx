@@ -162,12 +162,11 @@ export const Comparison = () => {
         it daily, carry it with you, and let it echo in moments of uncertainty.
         <br />
         <br />
-        By practicing these steps—pausing to acknowledge envy, cultivating
+        By practicing these steps, pausing to acknowledge envy, cultivating
         gratitude, celebrating small wins, choosing supportive company, and
-        affirming your worth—you'll cultivate a deep well of self-love. And from
+        affirming your worth, you'll cultivate a deep well of self-love. And from
         that place of inner confidence, there's no room left for comparison to
         steal your joy. Have a blessed day 💚
-        <br />
         <br />
         - <span>&lt;Nate/&gt;</span> 
       </p>

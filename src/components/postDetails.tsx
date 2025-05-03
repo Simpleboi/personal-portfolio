@@ -3,6 +3,7 @@ import { Judgement } from "../posts/judgement";
 import { Burnout } from "../posts/burnout";
 import { Comparison } from "../posts/comparison";
 import { Tailwind } from "../posts/Tailwind";
+import { Pride } from "../posts/Pride";
 
 export const blogPosts = [
   {
@@ -40,7 +41,7 @@ export const blogPosts = [
     postName: "Comparing yourself to Others",
     postDesc:
       "This post talks about not comparing yourself to others and unlocking greater self-acceptance by letting go of comparisons.",
-    postDate: "April 29th, 2025",
+    postDate: "April 30th, 2025",
     filters: ["Mental-health", "Personal", "Self Love"],
     image: "/assets/images/comparison.jpg",
     content: <Comparison />,
@@ -54,5 +55,15 @@ export const blogPosts = [
     filters: ["Web Development", "SASS", "TailwindCSS"],
     image: "/assets/images/tailwind.png",
     content: <Tailwind />,
+  },
+  {
+    id: 6,
+    postName: "Pride is the deadliest sin of all",  
+    postDesc:
+      "This post talks about how pride almost destroyed my entire life how the journey toward humility helped rebuild what I lost",
+    postDate: "May 3nd, 2025",
+    filters: ["Mental Health", "Pride", "Personal"],
+    image: "/assets/images/pride.jpg",
+    content: <Pride />,
   }
 ];
