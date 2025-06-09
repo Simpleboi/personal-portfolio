@@ -7,6 +7,7 @@ import compsci from "/assets/images/compsci-logo.png";
 import simplypi from "/assets/images/simplypi.png";
 import devonne from "/assets/images/donebydevonne.png";
 import journal from "/assets/images/journalxp.png";
+import genesis from "/assets/images/genesis.png";
 
 interface PortfolioCardProps {
   title: string;
@@ -15,7 +16,7 @@ interface PortfolioCardProps {
   desc: string;
 }
 
-let PortfolioItems = [
+let PortfolioItems: PortfolioCardProps[] = [
   {
     title: "FireSpark🔥✨",
     desc: "FireSpark is a component-based UI library designed to work seamlessly with SparkCSS. It provides a collection of reusable, customizable UI components, similar to Bootstrap or Tailwind UI, but with enhanced flexibility and performance. FireSpark integrates well with modern frontend frameworks like React and helps developers build elegant, responsive interfaces efficiently.",
@@ -57,6 +58,12 @@ let PortfolioItems = [
     desc: "JournalXP is a full-featured mental health journaling web application I developed to help users track thier mood, daily habits, and personal growth through gamified experiences. Built with React, TypeScript, TailwindCSS, and Firebase for Authentication and Firestore, it lets users sign up securely, write and organize journal entries, and earn XP. ",
     link: "https://github.com/Simpleboi/JournalXP",
     image: journal,
+  },
+  {
+    title: "Genesis Programming Language💻",
+    desc: "Genesis is a custom programming language I designed to explore language design and compiler development, emphasizing simplicity, stricter typing, and seamless integration with JavaScript environments. Genesis demonstrates my ability to build a parser and transpiler in Node.js that converts C-style syntax into clean JavaScript, so code runs anywhere JS runs without a separate runtime.",
+    link: "https://github.com/Simpleboi/Genesis",
+    image: genesis,
   },
 ];
 
