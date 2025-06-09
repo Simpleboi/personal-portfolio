@@ -5,6 +5,8 @@ import sparkcss from "/assets/images/sparkcss.png";
 import firespark from "/assets/images/firespark.png";
 import compsci from "/assets/images/compsci-logo.png";
 import simplypi from "/assets/images/simplypi.png";
+import devonne from "/assets/images/donebydevonne.png";
+import journal from "/assets/images/journalxp.png";
 
 interface PortfolioCardProps {
   title: string;
@@ -43,6 +45,18 @@ let PortfolioItems = [
     desc: "The SJC Computer Science Club is a student-led organization dedicated to fostering innovation, learning, and collaboration in computer science and technology. The club provides workshops, coding challenges, hackathons, and networking opportunities to help students expand their skills in programming, cybersecurity, web development, and software engineering.",
     link: "https://sjcsouthcompsci.org/",
     image: compsci,
+  },
+  {
+    title: "Done By Devonne💅🏽",
+    desc: "This project is a responsive web application I built for a nail artist called Devonne Farson. It features a modern, gradient-themed design with pages for service descriptions, and a gallery of nail art. The landing page was made with TypeScript, React, and TailwindCSS to demonstrate a user-friendly and mobile-friendly website",
+    link: "https://donebydevonne.netlify.app/",
+    image: devonne,
+  },
+  {
+    title: "JournalXP🎮📖",
+    desc: "JournalXP is a full-featured mental health journaling web application I developed to help users track thier mood, daily habits, and personal growth through gamified experiences. Built with React, TypeScript, TailwindCSS, and Firebase for Authentication and Firestore, it lets users sign up securely, write and organize journal entries, and earn XP. ",
+    link: "https://github.com/Simpleboi/JournalXP",
+    image: journal,
   },
 ];
 
