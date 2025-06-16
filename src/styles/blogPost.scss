@@ -169,11 +169,12 @@ hr {
     margin-left: 2rem;
     margin-bottom: 1.5rem;
     font-size: 1.25rem;
+    color: #333;
 
     li {
       margin-bottom: 0.5rem;
-      font-size: 1.5rem;
-      color: #444;
+      font-size: 1.25rem;
+      color: #333;
     }
   }
 
@@ -201,8 +202,15 @@ hr {
     max-height: 400px;
   }
 
-  .post-content p {
-    font-size: 1.1rem;
+  .post-content {
+    p {
+      font-size: 1.1rem;
+    }
+    ul {
+      li {
+        font-size: 1.1rem;
+      }
+    }
   }
 }
 

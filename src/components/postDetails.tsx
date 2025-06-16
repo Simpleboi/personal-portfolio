@@ -4,6 +4,7 @@ import { Burnout } from "../posts/burnout";
 import { Comparison } from "../posts/comparison";
 import { Tailwind } from "../posts/Tailwind";
 import { Pride } from "../posts/Pride";
+import { GenesisV093 } from "../posts/genv093";
 
 export const blogPosts = [
   {
@@ -74,6 +75,6 @@ export const blogPosts = [
     postDate: "June 16th, 2025",
     filters: ["Web Development", "Programming", "TypeScript"],
     image: "/assets/images/genesis.png",
-    content: <Pride />,
+    content: <GenesisV093 />,
   }
 ];
