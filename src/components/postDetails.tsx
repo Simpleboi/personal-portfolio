@@ -60,10 +60,20 @@ export const blogPosts = [
     id: 6,
     postName: "Pride is the deadliest sin of all",  
     postDesc:
-      "This post talks about how pride almost destroyed my entire life how the journey toward humility helped rebuild what I lost",
-    postDate: "May 3nd, 2025",
+      "This post talks about how pride almost destroyed my entire life and how the journey toward humility helped rebuild what I lost",
+    postDate: "May 3rd, 2025",
     filters: ["Mental Health", "Pride", "Personal"],
     image: "/assets/images/pride.jpg",
+    content: <Pride />,
+  },
+  {
+    id: 7,
+    postName: "Genesis Update 0.9.3",  
+    postDesc:
+      "This post talks about production updates for the Genesis programming Language version 0.9.3",
+    postDate: "June 16th, 2025",
+    filters: ["Web Development", "Programming", "TypeScript"],
+    image: "/assets/images/genesis.png",
     content: <Pride />,
   }
 ];
