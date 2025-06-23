@@ -5,6 +5,7 @@ import { Comparison } from "../posts/comparison";
 import { Tailwind } from "../posts/Tailwind";
 import { Pride } from "../posts/Pride";
 import { GenesisV093 } from "../posts/genv093";
+import { ReactUpdate } from "../posts/ReactUpdate";
 
 export const blogPosts = [
   {
@@ -76,5 +77,15 @@ export const blogPosts = [
     filters: ["Web Development", "Programming", "TypeScript"],
     image: "/assets/images/genesis.png",
     content: <GenesisV093 />,
+  },
+  {
+    id: 8,
+    postName: "React.js update after 1 year",  
+    postDesc:
+      "This post talks about my experience and overall feelings with the React.js library",
+    postDate: "June 23rd, 2025",
+    filters: ["Web Development", "Programming", "React"],
+    image: "/assets/images/React.webp",
+    content: <ReactUpdate />,
   }
 ];

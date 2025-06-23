@@ -79,9 +79,8 @@ const Filters = [
   "Web Development",
   "React",
   "TypeScript",
-  "AI",
   "Technology",
-  "Future Trends",
+  "Personal",
   "Programming",
 ];
 
