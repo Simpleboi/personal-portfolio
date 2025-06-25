@@ -23,8 +23,7 @@ export const Judgement = () => {
         logical approach to life. My mind often clashed with doctrines that
         couldn't be proven or fully explained, leading to a persistent inner
         conflict. I found myself under constant persecution for not 'believing
-        the right way,' as defined by those around me, more specifically my
-        parents. When I had problems or challenges, the most common response was
+        the right way,' as defined by those around me. When I had problems or challenges, the most common response was
         always, “Pray about it.” While spoken with a good heart, this advice left me
         yearning for tangible solutions, a concrete path forward rather than
         more questions that deepened my uncertainty.

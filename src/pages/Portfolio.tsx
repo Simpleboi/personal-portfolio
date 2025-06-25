@@ -1,13 +1,7 @@
 import { Nav } from "../components/nav";
 import "../styles/portfolio.scss";
 import blogPost from "/assets/images/blog-post-one.jpg";
-import sparkcss from "/assets/images/sparkcss.png";
-import firespark from "/assets/images/firespark.png";
 import compsci from "/assets/images/compsci-logo.png";
-import simplypi from "/assets/images/simplypi.png";
-import devonne from "/assets/images/donebydevonne.png";
-import journal from "/assets/images/journalxp.png";
-import genesis from "/assets/images/genesis.png";
 
 interface PortfolioCardProps {
   title: string;
@@ -18,22 +12,34 @@ interface PortfolioCardProps {
 
 let PortfolioItems: PortfolioCardProps[] = [
   {
-    title: "FireSpark🔥✨",
-    desc: "FireSpark is a component-based UI library designed to work seamlessly with SparkCSS. It provides a collection of reusable, customizable UI components, similar to Bootstrap or Tailwind UI, but with enhanced flexibility and performance. FireSpark integrates well with modern frontend frameworks like React and helps developers build elegant, responsive interfaces efficiently.",
-    link: "https://firespark.netlify.app/",
-    image: firespark,
+    title: "JournalXP🎮📖",
+    desc: "JournalXP is a full-featured mental health journaling web application I developed to help users track thier mood, daily habits, and personal growth through gamified experiences. Built with React, TypeScript, TailwindCSS, and Firebase for the backend, it lets users sign up securely, write and organize journal entries, and earn XP. ",
+    link: "https://journalxp-4ea0f.web.app/",
+    image: "/assets/images/jxp.png",
+  },
+  {
+    title: "Genesis Programming Language💻",
+    desc: "Genesis is a custom programming language I designed to explore language design and compiler development, emphasizing simplicity, stricter typing, and seamless integration with JavaScript environments. Genesis demonstrates my ability to build a parser and transpiler in Node.js that converts C-style syntax into clean JavaScript, so code runs anywhere JS runs without a separate runtime.",
+    link: "https://github.com/Simpleboi/Genesis",
+    image: "/assets/images/genesis.png",
   },
   {
     title: "SparkCSS⚡🎨",
     desc: "SparkCSS is a CSS preprocessor with utility-class features, combining the best aspects of SCSS and Tailwind CSS. It offers powerful directives like @snippet and @apply, making it easy to write modular, maintainable, and scalable styles. SparkCSS enhances development speed while keeping styles clean and structured, perfect for large-scale projects.",
-    link: "https://sparkcss.org/",
-    image: sparkcss,
+    link: "https://github.com/Simpleboi/sparkcss",
+    image: "/assets/images/sparkcss.png",
+  },
+  {
+    title: "FireSpark🔥✨",
+    desc: "FireSpark is a component-based UI library designed to work seamlessly with SparkCSS. It provides a collection of reusable, customizable UI components, similar to Bootstrap or Tailwind UI, but with enhanced flexibility and performance. FireSpark integrates well with modern frontend frameworks like React and helps developers build elegant, responsive interfaces efficiently.",
+    link: "https://github.com/Simpleboi/FireSpark",
+    image: "/assets/images/firespark.png",
   },
   {
     title: "SimplyPi 🧮📚",
     desc: "SimplyPi is an educational platform focused on math and computer science. It provides downloadable course materials, tutorials, and interactive exercises to help students and self-learners grasp fundamental concepts. SimplyPi aims to make complex topics simple and accessible, offering structured lessons in Algebra, Calculus, and Programming.",
-    link: "https://example.com",
-    image: simplypi,
+    link: "https://github.com/Simpleboi/SimplyPi-app",
+    image: "/assets/images/simplypi.png",
   },
   {
     title: "Neutron 🌐⚡",
@@ -50,20 +56,8 @@ let PortfolioItems: PortfolioCardProps[] = [
   {
     title: "Done By Devonne💅🏽",
     desc: "This project is a responsive web application I built for a nail artist called Devonne Farson. It features a modern, gradient-themed design with pages for service descriptions, and a gallery of nail art. The landing page was made with TypeScript, React, and TailwindCSS to demonstrate a user-friendly and mobile-friendly website",
-    link: "https://donebydevonne.netlify.app/",
-    image: devonne,
-  },
-  {
-    title: "JournalXP🎮📖",
-    desc: "JournalXP is a full-featured mental health journaling web application I developed to help users track thier mood, daily habits, and personal growth through gamified experiences. Built with React, TypeScript, TailwindCSS, and Firebase for Authentication and Firestore, it lets users sign up securely, write and organize journal entries, and earn XP. ",
-    link: "https://github.com/Simpleboi/JournalXP",
-    image: journal,
-  },
-  {
-    title: "Genesis Programming Language💻",
-    desc: "Genesis is a custom programming language I designed to explore language design and compiler development, emphasizing simplicity, stricter typing, and seamless integration with JavaScript environments. Genesis demonstrates my ability to build a parser and transpiler in Node.js that converts C-style syntax into clean JavaScript, so code runs anywhere JS runs without a separate runtime.",
-    link: "https://github.com/Simpleboi/Genesis",
-    image: genesis,
+    link: "/assets/images/donebydevonne.png",
+    image: "/assets/images/donebydevonne.png",
   },
 ];
 
