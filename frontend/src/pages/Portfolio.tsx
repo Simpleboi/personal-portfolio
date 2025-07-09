@@ -1,7 +1,7 @@
-import { Nav } from "../components/nav";
-import "../styles/portfolio.scss";
+import { Nav } from "@/components/nav";
 import blogPost from "/assets/images/blog-post-one.jpg";
 import compsci from "/assets/images/compsci-logo.png";
+import "../styles/portfolio.scss";
 
 interface PortfolioCardProps {
   title: string;
