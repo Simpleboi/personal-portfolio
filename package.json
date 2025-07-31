@@ -9,7 +9,8 @@
     "dev:back": "cd backend && npm run dev",
     "install:all": "npm run install:frontend && npm run install:backend",
     "install:front": "cd frontend && npm install",
-    "install:back": "cd backend && npm install"
+    "install:back": "cd backend && npm install",
+    "build:front" : "cd frontend && npm run build"
   },
   "keywords": [],
   "author": "",
