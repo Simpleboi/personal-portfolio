@@ -18,6 +18,12 @@ let PortfolioItems: PortfolioCardProps[] = [
     image: "/assets/images/jxp.png",
   },
   {
+    title: "FireSpark🔥✨",
+    desc: "FireSpark is a component-based UI library designed to speed up developer work flow. It provides a collection of reusable, customizable UI components, similar to Bootstrap or Tailwind UI, but with enhanced flexibility and performance. FireSpark integrates well with React and helps developers build elegant, responsive interfaces efficiently.",
+    link: "https://github.com/Simpleboi/FireSpark",
+    image: "/assets/images/firespark.png",
+  },
+  {
     title: "Genesis Programming Language💻",
     desc: "Genesis is a custom programming language I designed to explore language design and compiler development, emphasizing simplicity, stricter typing, and seamless integration with JavaScript environments. Genesis demonstrates my ability to build a parser and transpiler in Node.js that converts C-style syntax into clean JavaScript, so code runs anywhere JS runs without a separate runtime.",
     link: "https://github.com/Simpleboi/Genesis",
@@ -28,24 +34,6 @@ let PortfolioItems: PortfolioCardProps[] = [
     desc: "SparkCSS is a CSS preprocessor with utility-class features, combining the best aspects of SCSS and Tailwind CSS. It offers powerful directives like @snippet and @apply, making it easy to write modular, maintainable, and scalable styles. SparkCSS enhances development speed while keeping styles clean and structured, perfect for large-scale projects.",
     link: "https://github.com/Simpleboi/sparkcss",
     image: "/assets/images/sparkcss.png",
-  },
-  {
-    title: "FireSpark🔥✨",
-    desc: "FireSpark is a component-based UI library designed to work seamlessly with SparkCSS. It provides a collection of reusable, customizable UI components, similar to Bootstrap or Tailwind UI, but with enhanced flexibility and performance. FireSpark integrates well with modern frontend frameworks like React and helps developers build elegant, responsive interfaces efficiently.",
-    link: "https://github.com/Simpleboi/FireSpark",
-    image: "/assets/images/firespark.png",
-  },
-  {
-    title: "SimplyPi 🧮📚",
-    desc: "SimplyPi is an educational platform focused on math and computer science. It provides downloadable course materials, tutorials, and interactive exercises to help students and self-learners grasp fundamental concepts. SimplyPi aims to make complex topics simple and accessible, offering structured lessons in Algebra, Calculus, and Programming.",
-    link: "https://github.com/Simpleboi/SimplyPi-app",
-    image: "/assets/images/simplypi.png",
-  },
-  {
-    title: "Neutron 🌐⚡",
-    desc: "Neutron is a custom-built web browser focused on speed, privacy, and customization. Designed for developers and power users, Neutron aims to provide a lightweight, efficient browsing experience with features tailored for productivity. It leverages modern web technologies and offers a unique interface, making it an excellent alternative to mainstream browsers.",
-    link: "https://github.com/Simpleboi/Neutron",
-    image: blogPost,
   },
   {
     title: "SJC Computer Science Club 💻🚀",

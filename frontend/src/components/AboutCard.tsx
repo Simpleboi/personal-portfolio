@@ -38,16 +38,15 @@ export const AboutCard: React.FC = () => {
               <a href="https://github.com/Simpleboi/JournalXP" target="_blank">
                 JournalXP
               </a>{" "}
-              | A gameified mental health journaling app that
-              rewards users with XP for completing self-care tasks, tracking
-              thier mood, etc.
+              | A gameified mental health journaling app that rewards users with
+              XP for completing self-care tasks, tracking thier mood, etc.
             </li>
             <li>
               <a href="https://github.com/Simpleboi/Genesis" target="_blank">
                 Genesis
               </a>{" "}
-              | A general-purpose programming language designed with
-              a focus on web development.
+              | A general-purpose programming language designed with a focus on
+              web development.
             </li>
             <li>
               <a href="https://github.com/Simpleboi/sparkcss" target="_blank">
@@ -89,8 +88,10 @@ export const AboutCard: React.FC = () => {
             <h2>Resume / CV</h2>
             <p>Want to learn more about my experience and qualifications?</p>
             <a
-              href="/assets/resume/nathaniel_paz_resume.pdf"
+              href="/assets/resume/Resume.pdf"
               download="Nathaniel_Paz_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="resume-download-btn"
             >
               Download Resume (PDF)
