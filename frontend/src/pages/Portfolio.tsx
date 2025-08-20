@@ -1,5 +1,5 @@
 import { Nav } from "@/components/nav";
-import blogPost from "/assets/images/blog-post-one.jpg";
+// import blogPost from "/assets/images/blog-post-one.jpg";
 import compsci from "/assets/images/compsci-logo.png";
 import "../styles/portfolio.scss";
 
