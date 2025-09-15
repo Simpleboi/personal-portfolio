@@ -1,4 +1,4 @@
-export const Tailwind = () => {
+const Tailwind = () => {
   return (
     <div className="post-five">
       <p>
@@ -8,3 +8,5 @@ export const Tailwind = () => {
     </div>
   );
 };
+
+export default Tailwind;

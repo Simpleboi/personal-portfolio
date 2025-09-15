@@ -1,4 +1,4 @@
-export const Judgement = () => {
+const Judgement = () => {
   return (
     <div className="post-two">
       <p>
@@ -101,3 +101,5 @@ export const Judgement = () => {
     </div>
   );
 };
+
+export default Judgement;

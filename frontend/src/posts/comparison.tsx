@@ -1,4 +1,4 @@
-export const Comparison = () => {
+const Comparison = () => {
   return (
     <div className="post-four">
       <p>
@@ -173,3 +173,5 @@ export const Comparison = () => {
     </div>
   );
 };
+
+export default Comparison;

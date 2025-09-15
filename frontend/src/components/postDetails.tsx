@@ -1,11 +1,11 @@
-import { PostOne } from "../posts/intro";
-import { Judgement } from "../posts/judgement";
-import { Burnout } from "../posts/burnout";
-import { Comparison } from "../posts/comparison";
-import { Tailwind } from "../posts/Tailwind";
-import { Pride } from "../posts/Pride";
-import { GenesisV093 } from "../posts/genv093";
-import { ReactUpdate } from "../posts/ReactUpdate";
+import PostOne from "@/posts/intro";
+import Judgement from "@/posts/judgement";
+import Burnout from "@/posts/burnout";
+import Comparison from "@/posts/comparison";
+import Tailwind from "@/posts/Tailwind";
+import Pride from "@/posts/Pride";
+import GenesisV093 from "@/posts/genv093";
+import ReactUpdate from "@/posts/ReactUpdate";
 
 export const blogPosts = [
   {

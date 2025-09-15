@@ -192,3 +192,4 @@ export const BlogPostDetails = () => {
     </div>
   );
 };
+

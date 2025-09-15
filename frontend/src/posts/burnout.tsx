@@ -1,4 +1,4 @@
-export const Burnout = () => {
+const Burnout = () => {
   return (
     <div className="post-three">
       <p>
@@ -187,3 +187,5 @@ export const Burnout = () => {
     </div>
   );
 };
+
+export default Burnout;

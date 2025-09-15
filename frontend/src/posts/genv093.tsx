@@ -1,4 +1,4 @@
-export const GenesisV093 = () => {
+const GenesisV093 = () => {
   return (
     <div className="post-seven">
       <p>
@@ -124,3 +124,5 @@ export const GenesisV093 = () => {
     </div>
   );
 };
+
+export default GenesisV093;

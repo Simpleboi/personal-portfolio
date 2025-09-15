@@ -1,4 +1,4 @@
-export const ReactUpdate = () => {
+const ReactUpdate = () => {
   return (
     <div className="post-eight">
       <p>
@@ -101,3 +101,5 @@ export const ReactUpdate = () => {
     </div>
   );
 };
+
+export default ReactUpdate;

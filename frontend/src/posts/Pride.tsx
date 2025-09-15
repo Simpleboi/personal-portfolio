@@ -1,4 +1,4 @@
-export const Pride = () => {
+const Pride = () => {
   return (
     <div className="post-six">
       <p>
@@ -307,3 +307,5 @@ export const Pride = () => {
     </div>
   );
 };
+
+export default Pride;

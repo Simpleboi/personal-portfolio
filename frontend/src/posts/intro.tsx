@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const PostOne = () => {
+const PostOne = () => {
   return (
     <div className="post-one">
       <p>
@@ -116,3 +116,5 @@ export const PostOne = () => {
     </div>
   );
 };
+
+export default PostOne;

@@ -64,15 +64,12 @@ export const AboutCard: React.FC = () => {
             </li>
           </ul>
           <br />
-          My current tech stack includes Vite as a build tool for fast
-          development, React for dynamic front-end UI, and Node.js + Express for
-          backend logic and API development. I use SparkCSS, a custom CSS
-          preprocessor I built, along with TypeScript to ensure type safety and
-          cleaner, maintainable code. For backend services, I utilize Firebase
-          for authentication, database, and hosting needs, while Netlify serves
-          as a platform for deploying static web applications. This stack allows
-          me to create fast, responsive, and scalable full-stack applications
-          with modern development practices.
+          I mostly build with the MERN stack: React on the front end
+          (bootstrapped with Vite), Node/Express for APIs, and MongoDB for data.
+          I lean on TypeScript where it helps, and I keep the UI
+          lightweight, often with a small utility stylesheet I wrote called SparkCSS. It's a
+          setup that lets me ship fast, handle real-world CRUD, and scale
+          without drama.
           <br />
           <br />I have a deep love for programming and problem-solving,
           especially when it comes to tackling complex software challenges.
