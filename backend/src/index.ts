@@ -1,21 +1,35 @@
 import express from "express";
-import dotenv from "dotenv";
+import path from "path";
 import cors from "cors";
+import dotenv from "dotenv";
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT ? Number(process.env.PORT) : 8080;
+const PORT = Number(process.env.PORT || 8080);
 
+// middlewares
 app.use(cors());
 app.use(express.json());
 
-app.get("/api/hello", (req, res) => {
-    res.json({message: "Hello from the backend!"});
+// --- API routes ---
+app.get("/api/hello", (_req, res) => {
+  res.json({ message: "Hello from the backend!" });
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`)
-})
+// --- serve the Vite build ---
+const distPath = path.join(__dirname, "..", "..", "frontend", "dist");
 
-app.listen(PORT, () => console.log(`listening on ${PORT}`));
+// static assets (css/js/img)
+app.use(express.static(distPath));
+
+// SPA fallback (for React Router). Do NOT catch /api paths.
+app.get("*", (req, res) => {
+  if (req.path.startsWith("/api")) return res.sendStatus(404);
+  res.sendFile(path.join(distPath, "index.html"));
+});
+
+// single listen
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
