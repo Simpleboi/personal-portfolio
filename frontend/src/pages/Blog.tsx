@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Suspense } from "react";
+import { Link, useParams } from "react-router-dom";
 import { Nav } from "../components/nav";
-import { useParams } from "react-router-dom";
 import "../styles/Blog.scss";
-import { blogPosts } from "../components/postDetails";
 import "../styles/blogPost.scss";
 import BlogPostCard from "../components/BlogPostCard";
+import { Posts } from "@/data/post"; 
 
 export const BlogBanner = () => {
   return (
@@ -49,9 +49,9 @@ export const BlogFilter: React.FC<BlogFilterProps> = ({ onSearch }) => {
         </div>
       </div>
       <div className="filter-bottom">
-        {Filters.map((element, index) => {
-          return <button key={index}>{element}</button>;
-        })}
+        {Filters.map((element, index) => (
+          <button key={index}>{element}</button>
+        ))}
       </div>
     </section>
   );
@@ -84,29 +84,20 @@ const Filters = [
   "Programming",
 ];
 
-export interface BlogPostProps {
-  postName?: string;
-  postDesc?: string;
-  postDate?: string;
-  filters?: string[];
-  image?: string;
-  id: number;
-  onSearch: (term: string) => void;
-}
-
 export const Blog = () => {
   const [searchTerm, setSearchTerm] = React.useState("");
 
-  const filteredPosts =
-    searchTerm.trim() === ""
-      ? blogPosts
-      : blogPosts.filter((post) =>
-          post.postName.toLowerCase().includes(searchTerm.toLowerCase())
-        );
+  const filteredPosts = React.useMemo(() => {
+    const q = searchTerm.trim().toLowerCase();
+    if (!q) return Posts;
+    return Posts.filter(
+      (p) =>
+        p.title.toLowerCase().includes(q) ||
+        p.tags.some((t) => t.toLowerCase().includes(q))
+    );
+  }, [searchTerm]);
 
-  const handleSearch = (term: string) => {
-    setSearchTerm(term);
-  };
+  const handleSearch = (term: string) => setSearchTerm(term);
 
   return (
     <section id="blog">
@@ -115,15 +106,15 @@ export const Blog = () => {
       <BlogFilter onSearch={handleSearch} />
       <div className="post-container">
         {filteredPosts.length > 0 ? (
-          filteredPosts.map((post) => (
+          filteredPosts.map((p) => (
             <BlogPostCard
-              key={post.id}
-              postName={post.postName}
-              postDesc={post.postDesc}
-              postDate={post.postDate}
-              filters={post.filters}
-              image={post.image}
-              id={post.id}
+              key={p.slug}
+              slug={p.slug}
+              postName={p.title}
+              postDesc={p.description}
+              postDate={new Date(p.date).toLocaleDateString()}
+              filters={p.tags}
+              image={p.image}
               onSearch={handleSearch}
             />
           ))
@@ -139,39 +130,40 @@ export const Blog = () => {
 };
 
 export const BlogPostDetails = () => {
-  const { id } = useParams<{ id: string }>();
-  const post = blogPosts.find((post) => post.id.toString() === id);
+  const { slug = "" } = useParams<{ slug: string }>();
+  const post = Posts.find((p) => p.slug === slug);
+  if (!post) return <h1>Post not found</h1>;
 
-  if (!post) {
-    return <h1>Post not found</h1>;
-  }
+  const Content = post.component;
 
   return (
     <div className="blogpost-details">
       <div className="go-back">
-        <a href="../">
+        <Link to="/blog">
           <i className="bx bx-left-arrow-alt"></i>Go Back
-        </a>
+        </Link>
       </div>
       <hr />
-      <h1 className="current-post-name">{post.postName}</h1>
+      <h1 className="current-post-name">{post.title}</h1>
       <figure className="img-container">
-        <img
-          src={post.image}
-          alt={post.postName}
-          className="current-post-img"
-        />
+        <img src={post.image} alt={post.title} className="current-post-img" />
       </figure>
-      <h2 className="current-post-date">{post.postDate}</h2>
+      <h2 className="current-post-date">
+        {new Date(post.date).toLocaleDateString()}
+      </h2>
       <div className="filters">
-        {post.filters.map((filter, index) => (
-          <span key={index} className="filter">
-            {filter}
+        {post.tags.map((tag) => (
+          <span key={tag} className="filter">
+            {tag}
           </span>
         ))}
       </div>
       <hr />
-      <div className="post-content">{[post.content]}</div>
+      <div className="post-content">
+        <Suspense fallback={<p>Loading post…</p>}>
+          <Content />
+        </Suspense>
+      </div>
       <div className="social-share">
         <h3>Share this post</h3>
         <div className="share-buttons">
@@ -192,4 +184,3 @@ export const BlogPostDetails = () => {
     </div>
   );
 };
-

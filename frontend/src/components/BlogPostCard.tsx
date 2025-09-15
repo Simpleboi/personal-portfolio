@@ -1,7 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BlogPostProps } from "../pages/Blog";
 import "../styles/BlogPostCard.scss";
+
+type BlogPostProps = {
+  slug: string;
+  postName: string;
+  postDesc: string;
+  postDate: string;
+  filters: string[];
+  image: string;
+  onSearch: (t: string) => void;
+}
 
 export const BlogPostCard: React.FC<BlogPostProps> = ({
   postName = "Post Name",
@@ -9,7 +18,7 @@ export const BlogPostCard: React.FC<BlogPostProps> = ({
   postDate = "January 1st, 2025",
   filters = ["General"],
   image,
-  id,
+  slug,
 }) => {
   return (
     <article className="blog-post-card">
@@ -29,7 +38,7 @@ export const BlogPostCard: React.FC<BlogPostProps> = ({
         </div>
         <h2 className="blog-post-title">{postName}</h2>
         <p className="blog-post-excerpt">{postDesc}</p>
-        <Link to={`/blog/${id}`} className="read-more-link">
+        <Link to={`/blog/${slug}`} className="read-more-link">
           Read More <i className="bx bx-right-arrow-alt"></i>
         </Link>
       </div>
