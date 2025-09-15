@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:front": "cd frontend && npm run dev",
     "dev:back": "cd backend && npm run dev",
-    "install:all": "npm run install:frontend && npm run install:backend",
+    "install:all": "npm run install:front && npm run install:back",
     "install:front": "cd frontend && npm install",
     "install:back": "cd backend && npm install",
     "build:front" : "cd frontend && npm run build"
