@@ -76,7 +76,6 @@ export const ContactForm = () => {
       setIsSubmitting(true);
 
       try {
-        // Using the same formspree endpoint
         const response = await fetch("https://formspree.io/f/xovkagwq", {
           method: "POST",
           headers: {
@@ -127,7 +126,7 @@ export const ContactForm = () => {
           </div>
           <div className="contact-item">
             <i className='bx bxl-instagram'></i>
-            <span>@n8.jsx</span>
+            <span>@nate.jsx</span>
           </div>
           <div className="contact-item">
             <i className="bx bx-map"></i>

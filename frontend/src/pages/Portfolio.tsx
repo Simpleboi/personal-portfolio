@@ -14,7 +14,7 @@ let PortfolioItems: PortfolioCardProps[] = [
   {
     title: "JournalXP🎮📖",
     desc: "JournalXP is a full-featured mental health journaling web application I developed to help users track thier mood, daily habits, and personal growth through gamified experiences. Built with React, TypeScript, TailwindCSS, and Firebase for the backend, it lets users sign up securely, write and organize journal entries, and earn XP. ",
-    link: "https://journalxp-4ea0f.web.app/",
+    link: "https://journalxp.com/",
     image: "/assets/images/jxp.png",
   },
   {
@@ -38,13 +38,13 @@ let PortfolioItems: PortfolioCardProps[] = [
   {
     title: "SJC Computer Science Club 💻🚀",
     desc: "The SJC Computer Science Club is a student-led organization dedicated to fostering innovation, learning, and collaboration in computer science and technology. The club provides workshops, coding challenges, hackathons, and networking opportunities to help students expand their skills in programming, cybersecurity, web development, and software engineering.",
-    link: "https://sjcsouthcompsci.org/",
+    link: "https://sjcsouthcompsci.netlify.app/",
     image: compsci,
   },
   {
     title: "Done By Devonne💅🏽",
     desc: "This project is a responsive web application I built for a nail artist called Devonne Farson. It features a modern, gradient-themed design with pages for service descriptions, and a gallery of nail art. The landing page was made with TypeScript, React, and TailwindCSS to demonstrate a user-friendly and mobile-friendly website",
-    link: "/assets/images/donebydevonne.png",
+    link: "https://donebydevonne.netlify.app",
     image: "/assets/images/donebydevonne.png",
   },
 ];

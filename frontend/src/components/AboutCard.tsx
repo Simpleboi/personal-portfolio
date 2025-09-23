@@ -26,7 +26,7 @@ export const AboutCard: React.FC = () => {
           Over the years, I've put my knowledge into action by working on
           various projects and taking on leadership roles. I'm currently the
           President of the{" "}
-          <a href="https://sjcsouthcompsci.org/" target="_blankt">
+          <a href="https://sjcsouthcompsci.netlify.app/" target="_blankt">
             Computer Science Club
           </a>{" "}
           at my college, where I guide and inspire other students in thier
@@ -35,7 +35,7 @@ export const AboutCard: React.FC = () => {
           <br />
           <ul>
             <li>
-              <a href="https://github.com/Simpleboi/JournalXP" target="_blank">
+              <a href="https://journalxp.com" target="_blank">
                 JournalXP
               </a>{" "}
               | A gameified mental health journaling app that rewards users with
