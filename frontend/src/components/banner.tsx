@@ -2,7 +2,11 @@ import "../styles/banner.scss";
 import { Link } from "react-router-dom";
 
 export const BannerBTN: React.FC = () => {
-  return <Link to="/contact" className="banner-btn">Contact Me</Link>;
+  return (
+    <Link to="/contact" className="banner-btn">
+      Contact Me
+    </Link>
+  );
 };
 
 export interface BannerProps {
@@ -10,7 +14,6 @@ export interface BannerProps {
 }
 
 export const Banner: React.FC<BannerProps> = () => {
-  
   return (
     <header>
       <div className="banner-container">
@@ -24,11 +27,11 @@ export const Banner: React.FC<BannerProps> = () => {
 
         <div className="social-container">
           <div className="social-inner-container">
-            <a href="https://www.instagram.com/n8.jsx/" target="_blank">
+            <a href="https://www.instagram.com/nate.jsx/" target="_blank">
               <i className="bx bxl-instagram"></i>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/nathaniel-paz-182470386/"
               target="_blank"
             >
               <i className="bx bxl-linkedin"></i>
