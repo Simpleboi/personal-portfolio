@@ -112,7 +112,7 @@ export const Blog = () => {
               slug={p.slug}
               postName={p.title}
               postDesc={p.description}
-              postDate={new Date(p.date).toLocaleDateString()}
+              postDate={p.date}
               filters={p.tags}
               image={p.image}
               onSearch={handleSearch}
@@ -149,7 +149,7 @@ export const BlogPostDetails = () => {
         <img src={post.image} alt={post.title} className="current-post-img" />
       </figure>
       <h2 className="current-post-date">
-        {new Date(post.date).toLocaleDateString()}
+        {post.date}
       </h2>
       <div className="filters">
         {post.tags.map((tag) => (

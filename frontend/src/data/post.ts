@@ -90,4 +90,14 @@ export const Posts: PostMeta[] = [
     image: "/assets/images/React.webp",
     component: React.lazy(() => import("../posts/ReactUpdate")),
   },
+  {
+    slug: "betrayal",
+    title: "How to deal with Betrayal",
+    description:
+      "This post is a story on a betrayal I endured and how I overcame it, and so can you.",
+    date: "September 25th, 2025",
+    tags: ["Personal", "Menthal Health", "Self Help"],
+    image: "/assets/images/betrayal.jpg",
+    component: React.lazy(() => import("../posts/Betrayal")),
+  },
 ];
