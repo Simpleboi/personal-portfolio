@@ -92,7 +92,7 @@ export const Posts: PostMeta[] = [
   },
   {
     slug: "betrayal",
-    title: "How to deal with Betrayal",
+    title: "Betrayal",
     description:
       "This post is a story on a betrayal I endured and how I overcame it, and so can you.",
     date: "September 25th, 2025",
