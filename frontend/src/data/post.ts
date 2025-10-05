@@ -100,4 +100,14 @@ export const Posts: PostMeta[] = [
     image: "/assets/images/betrayal.jpg",
     component: React.lazy(() => import("../posts/Betrayal")),
   },
+  {
+    slug: "Love",
+    title: "Love",
+    description:
+      "This post is an introspective look at love, what it is, what it isn’t, and learning to live fully even when love no longer stays.",
+    date: "October 5th, 2025",
+    tags: ["Personal", "Mental Health", "Love"],
+    image: "/assets/images/love.jpg",
+    component: React.lazy(() => import("../posts/Love")),
+  },
 ];
