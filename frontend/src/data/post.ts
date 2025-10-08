@@ -110,4 +110,14 @@ export const Posts: PostMeta[] = [
     image: "/assets/images/love.jpg",
     component: React.lazy(() => import("../posts/Love")),
   },
+  {
+    slug: "healing",
+    title: "The Sound of Healing",
+    description:
+      "This post talks about a sound that follows heartbreak, not the echo of loss, but the whisper of something new growing in its place. That’s the sound I learned to listen for.",
+    date: "October 7th, 2025",
+    tags: ["Personal", "Mental Health", "Healing"],
+    image: "/assets/images/healing.jpg",
+    component: React.lazy(() => import("../posts/Healing")),
+  },
 ];
