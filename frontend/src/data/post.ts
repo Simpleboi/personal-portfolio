@@ -120,4 +120,14 @@ export const Posts: PostMeta[] = [
     image: "/assets/images/healing.jpg",
     component: React.lazy(() => import("../posts/Healing")),
   },
+  {
+    slug: "trauma",
+    title: "The Weight of Holding On",
+    description:
+      "This post is about understanding the pull of toxic love, the weight of staying out of fear, and the peace that comes when you finally choose yourself.",
+    date: "October 9th, 2025",
+    tags: ["Personal", "Mental Health", "Trauma Bonding"],
+    image: "/assets/images/trauma.jpg",
+    component: React.lazy(() => import("../posts/trauma")),
+  },
 ];
