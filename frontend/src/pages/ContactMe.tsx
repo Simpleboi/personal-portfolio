@@ -122,7 +122,7 @@ export const ContactForm = () => {
         <div className="contact-info">
           <div className="contact-item">
             <i className="bx bx-envelope"></i>
-            <span>n8thegr8.jsx@gmail.com</span>
+            <span>natejsx@gmail.com</span>
           </div>
           <div className="contact-item">
             <i className='bx bxl-instagram'></i>
