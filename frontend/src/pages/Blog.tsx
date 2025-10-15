@@ -82,6 +82,7 @@ const Filters = [
   "Technology",
   "Personal",
   "Programming",
+  "Mental Health"
 ];
 
 export const Blog = () => {

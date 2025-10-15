@@ -130,4 +130,14 @@ export const Posts: PostMeta[] = [
     image: "/assets/images/trauma.jpg",
     component: React.lazy(() => import("../posts/trauma")),
   },
+  {
+    slug: "right-or-wrong",
+    title: "What Makes Someone a Bad Person?",
+    description:
+      "This post is about understanding the pull of toxic love, the weight of staying out of fear, and the peace that comes when you finally choose yourself.",
+    date: "October 15th, 2025",
+    tags: ["Personal", "Mental Health", "Morality"],
+    image: "/assets/images/right-and-wrong.jpg",
+    component: React.lazy(() => import("../posts/Badpeople")),
+  },
 ];
