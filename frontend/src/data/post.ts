@@ -140,7 +140,11 @@ export const Posts: PostMeta[] = [
     image: "/assets/images/right-and-wrong.jpg",
     component: React.lazy(() => import("../posts/Badpeople")),
   },
-  {
+  
+];
+
+/*
+{
     slug: "education",
     title: "Education isn’t broken, it’s Misunderstood",
     description:
@@ -150,4 +154,4 @@ export const Posts: PostMeta[] = [
     image: "/assets/images/education.jpg",
     component: React.lazy(() => import("../posts/Education")),
   },
-];
+*/
