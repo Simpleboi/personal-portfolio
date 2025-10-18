@@ -140,18 +140,14 @@ export const Posts: PostMeta[] = [
     image: "/assets/images/right-and-wrong.jpg",
     component: React.lazy(() => import("../posts/Badpeople")),
   },
-  
-];
-
-/*
-{
+  {
     slug: "education",
     title: "Education isn’t broken, it’s Misunderstood",
     description:
       "This post counters the way we think about education. From failing grades to a passion for teaching, I share how real learning doesn’t come from passing tests, it comes from curiosity, failure, and the courage to think differently.",
-    date: "October 15th, 2025",
+    date: "October 17th, 2025",
     tags: ["Personal", "Mental Health", "Education"],
     image: "/assets/images/education.jpg",
     component: React.lazy(() => import("../posts/Education")),
   },
-*/
+];
