@@ -150,4 +150,14 @@ export const Posts: PostMeta[] = [
     image: "/assets/images/education.jpg",
     component: React.lazy(() => import("../posts/Education")),
   },
+  {
+    slug: "death",
+    title: "Before the Credits Roll",
+    description:
+      "This post asks what it truly means to live while knowing we’ll die. It challenges the fear of mortality, celebrates the beauty of existence, and reminds us that our time here, brief as it may be, is the most precious thing we’ll ever have.",
+    date: "October 25th, 2025",
+    tags: ["Personal"],
+    image: "/assets/images/death.jpg",
+    component: React.lazy(() => import("../posts/Death")),
+  },
 ];
