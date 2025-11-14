@@ -1,9 +1,5 @@
 @use "./plug" as p;
 
-/* ============================================
-   MODERN BLOG POST PAGE - Reference Design
-   ============================================ */
-
 .modern-blog-page {
   min-height: 100vh;
   background: linear-gradient(to bottom, #eff6ff 0%, #f3e8ff 50%, #fce7f3 100%);
@@ -129,9 +125,10 @@
     justify-content: center;
     border: 2px solid #c7d2fe;
 
-    i {
-      font-size: 1.5rem;
-      color: white;
+    img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
     }
   }
 

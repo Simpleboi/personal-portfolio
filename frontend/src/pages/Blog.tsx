@@ -5,6 +5,7 @@ import "../styles/Blog.scss";
 import "../styles/blogPost.scss";
 import BlogPostCard from "../components/BlogPostCard";
 import { Posts } from "@/data/post"; 
+import logo from "../../public/assets/images/logo.jpg";
 
 export const BlogBanner = () => {
   return (
@@ -186,11 +187,11 @@ export const Blog = () => {
 };
 
 // Calculate reading time based on word count
-const calculateReadingTime = (content: string): number => {
-  const wordsPerMinute = 200;
-  const wordCount = content.split(/\s+/).length;
-  return Math.ceil(wordCount / wordsPerMinute);
-};
+// const calculateReadingTime = (content: string): number => {
+//   const wordsPerMinute = 200;
+//   const wordCount = content.split(/\s+/).length;
+//   return Math.ceil(wordCount / wordsPerMinute);
+// };
 
 export const BlogPostDetails = () => {
   const { slug = "" } = useParams<{ slug: string }>();
@@ -245,7 +246,7 @@ export const BlogPostDetails = () => {
           <div className="author-section">
             <div className="author-info-left">
               <div className="author-avatar-img">
-                <i className="bx bxs-user"></i>
+                <img src={logo} alt="" />
               </div>
               <div className="author-text">
                 <p className="author-name-text">Nate</p>
