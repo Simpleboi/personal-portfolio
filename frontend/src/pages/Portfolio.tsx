@@ -10,12 +10,18 @@ interface PortfolioCardProps {
   desc: string;
 }
 
-let PortfolioItems: PortfolioCardProps[] = [
+const PortfolioItems: PortfolioCardProps[] = [
   {
     title: "JournalXP🎮📖",
     desc: "JournalXP is a full-featured mental health journaling web application I developed to help users track thier mood, daily habits, and personal growth through gamified experiences. Built with React, TypeScript, TailwindCSS, and Firebase for the backend, it lets users sign up securely, write and organize journal entries, and earn XP. ",
     link: "https://journalxp.com/",
     image: "/assets/images/jxp.png",
+  },
+  {
+    title: "Pyra.js⚡🔥",
+    desc: "Pyra is a modular build system for modern JavaScript and TypeScript projects. It takes inspiration from the elegance of Vite-like speed with the flexibility of plugin-driven architecture, allowing developers to craft, extend, and optimize builds for any kind of project, from small scripts to full-scale frameworks.",
+    link: "https://pyrajs.netlify.app/", 
+    image: "/assets/images/pyralogo.png"
   },
   {
     title: "FireSpark🔥✨",
