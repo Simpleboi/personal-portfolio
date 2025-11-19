@@ -280,7 +280,7 @@ export const BlogPostDetails = () => {
         </article>
 
         {/* CTA Section */}
-        <div className="blog-cta-section">
+        {/* <div className="blog-cta-section">
           <div className="cta-card">
             <i className="bx bx-code-alt cta-icon"></i>
             <h3 className="cta-title">Want to work together?</h3>
@@ -296,7 +296,7 @@ export const BlogPostDetails = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Related Posts */}
         <section className="related-posts-section">

@@ -160,4 +160,14 @@ export const Posts: PostMeta[] = [
     image: "/assets/images/death.jpg",
     component: React.lazy(() => import("../posts/Death")),
   },
+  {
+    slug: "happiness",
+    title: "The Pursuit of Happiness",
+    description:
+      "This post explores the difference between chasing happiness and finding contentment, diving into the loneliness of pursuit, the fear of stillness, and the quiet peace that comes when we stop running from ourselves.",
+    date: "November 18th, 2025",
+    tags: ["Personal"],
+    image: "/assets/images/happiness.jpg",
+    component: React.lazy(() => import("../posts/Happiness")),
+  },
 ];
