@@ -9,6 +9,7 @@ type BlogPostProps = {
   postDate: string;
   filters: string[];
   image: string;
+  readingTime: number;
   onSearch: (t: string) => void;
 }
 
@@ -19,6 +20,7 @@ export const BlogPostCard: React.FC<BlogPostProps> = ({
   filters = ["General"],
   image,
   slug,
+  readingTime,
 }) => {
   return (
     <article className="blog-post-card">
@@ -26,6 +28,10 @@ export const BlogPostCard: React.FC<BlogPostProps> = ({
         <img src={image} alt={postName} />
         <div className="post-date">
           <span>{postDate}</span>
+        </div>
+        <div className="reading-time">
+          <i className="bx bx-time-five"></i>
+          <span>{readingTime} min read</span>
         </div>
       </div>
       <div className="blog-post-content">

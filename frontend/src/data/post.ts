@@ -7,6 +7,7 @@ export type PostMeta = {
   date: string;
   tags: string[];
   image: string;
+  readingTime: number; // in minutes
   component: React.LazyExoticComponent<React.ComponentType>;
 };
 
@@ -14,10 +15,11 @@ export const Posts: PostMeta[] = [
   {
     slug: "my-first-blog-post",
     title: "My First Blog Post!",
-    description: "Why I made the blog and what I’ll write about.",
+    description: "Why I made the blog and what I'll write about.",
     date: "March 6th, 2025",
     tags: ["Web Development", "Personal", "Nate.jsx"],
     image: "/assets/images/logo.jpg",
+    readingTime: 3,
     component: React.lazy(() => import("../posts/intro")),
   },
   {
@@ -28,6 +30,7 @@ export const Posts: PostMeta[] = [
     date: "April 4th, 2025",
     tags: ["Mental-health", "Personal"],
     image: "/assets/images/sinner.jpg",
+    readingTime: 4,
     component: React.lazy(() => import("../posts/judgement")),
   },
   {
@@ -38,6 +41,7 @@ export const Posts: PostMeta[] = [
     date: "April 29th, 2025",
     tags: ["Mental-health", "Personal", "Burnout"],
     image: "/assets/images/burnout.jpg",
+    readingTime: 5,
     component: React.lazy(() => import("../posts/burnout")),
   },
   {
@@ -48,6 +52,7 @@ export const Posts: PostMeta[] = [
     date: "April 30th, 2025",
     tags: ["Mental-health", "Personal", "Self Love"],
     image: "/assets/images/comparison.jpg",
+    readingTime: 5,
     component: React.lazy(() => import("../posts/comparison")),
   },
   {
@@ -58,6 +63,7 @@ export const Posts: PostMeta[] = [
     date: "May 2nd, 2025",
     tags: ["Mental-health", "SASS", "TailwindCSS"],
     image: "/assets/images/tailwind.png",
+    readingTime: 6,
     component: React.lazy(() => import("../posts/Tailwind")),
   },
   {
@@ -68,6 +74,7 @@ export const Posts: PostMeta[] = [
     date: "May 3rd, 2025",
     tags: ["Mental-health", "Pride", "Personal"],
     image: "/assets/images/pride.jpg",
+    readingTime: 7,
     component: React.lazy(() => import("../posts/Pride")),
   },
   {
@@ -78,6 +85,7 @@ export const Posts: PostMeta[] = [
     date: "June 16th, 2025",
     tags: ["Web Development", "Programming", "TypeScript"],
     image: "/assets/images/genesis.png",
+    readingTime: 4,
     component: React.lazy(() => import("../posts/genv093")),
   },
   {
@@ -88,6 +96,7 @@ export const Posts: PostMeta[] = [
     date: "June 23rd, 2025",
     tags: ["Web Development", "Programming", "React"],
     image: "/assets/images/React.webp",
+    readingTime: 5,
     component: React.lazy(() => import("../posts/ReactUpdate")),
   },
   {
@@ -98,26 +107,29 @@ export const Posts: PostMeta[] = [
     date: "September 25th, 2025",
     tags: ["Personal", "Mental Health", "Self Help"],
     image: "/assets/images/betrayal.jpg",
+    readingTime: 6,
     component: React.lazy(() => import("../posts/Betrayal")),
   },
   {
     slug: "Love",
     title: "Love",
     description:
-      "This post is an introspective look at love, what it is, what it isn’t, and learning to live fully even when love no longer stays.",
+      "This post is an introspective look at love, what it is, what it isn't, and learning to live fully even when love no longer stays.",
     date: "October 5th, 2025",
     tags: ["Personal", "Mental Health", "Love"],
     image: "/assets/images/love.jpg",
+    readingTime: 8,
     component: React.lazy(() => import("../posts/Love")),
   },
   {
     slug: "healing",
     title: "The Sound of Healing",
     description:
-      "This post talks about a sound that follows heartbreak, not the echo of loss, but the whisper of something new growing in its place. That’s the sound I learned to listen for.",
+      "This post talks about a sound that follows heartbreak, not the echo of loss, but the whisper of something new growing in its place. That's the sound I learned to listen for.",
     date: "October 7th, 2025",
     tags: ["Personal", "Mental Health", "Healing"],
     image: "/assets/images/healing.jpg",
+    readingTime: 6,
     component: React.lazy(() => import("../posts/Healing")),
   },
   {
@@ -128,36 +140,40 @@ export const Posts: PostMeta[] = [
     date: "October 9th, 2025",
     tags: ["Personal", "Mental Health", "Trauma Bonding"],
     image: "/assets/images/trauma.jpg",
+    readingTime: 7,
     component: React.lazy(() => import("../posts/trauma")),
   },
   {
     slug: "right-or-wrong",
     title: "What Makes Someone a Bad Person?",
     description:
-      "This post challenges the idea of absolute morality by asking uncomfortable questions about judgment, justice, and human behavior. It explores whether “good” and “bad” are fixed truths, or just reflections of what society chooses to believe.",
+      "This post challenges the idea of absolute morality by asking uncomfortable questions about judgment, justice, and human behavior. It explores whether 'good' and 'bad' are fixed truths, or just reflections of what society chooses to believe.",
     date: "October 15th, 2025",
     tags: ["Personal", "Mental Health", "Morality"],
     image: "/assets/images/right-and-wrong.jpg",
+    readingTime: 9,
     component: React.lazy(() => import("../posts/Badpeople")),
   },
   {
     slug: "education",
-    title: "Education isn’t broken, it’s Misunderstood",
+    title: "Education isn't broken, it's Misunderstood",
     description:
-      "This post counters the way we think about education. From failing grades to a passion for teaching, I share how real learning doesn’t come from passing tests, it comes from curiosity, failure, and the courage to think differently.",
+      "This post counters the way we think about education. From failing grades to a passion for teaching, I share how real learning doesn't come from passing tests, it comes from curiosity, failure, and the courage to think differently.",
     date: "October 17th, 2025",
     tags: ["Personal", "Mental Health", "Education"],
     image: "/assets/images/education.jpg",
+    readingTime: 9,
     component: React.lazy(() => import("../posts/Education")),
   },
   {
     slug: "death",
     title: "Before the Credits Roll",
     description:
-      "This post asks what it truly means to live while knowing we’ll die. It challenges the fear of mortality, celebrates the beauty of existence, and reminds us that our time here, brief as it may be, is the most precious thing we’ll ever have.",
+      "This post asks what it truly means to live while knowing we'll die. It challenges the fear of mortality, celebrates the beauty of existence, and reminds us that our time here, brief as it may be, is the most precious thing we'll ever have.",
     date: "October 25th, 2025",
     tags: ["Personal"],
     image: "/assets/images/death.jpg",
+    readingTime: 8,
     component: React.lazy(() => import("../posts/Death")),
   },
   {
@@ -168,6 +184,7 @@ export const Posts: PostMeta[] = [
     date: "November 18th, 2025",
     tags: ["Personal"],
     image: "/assets/images/happiness.jpg",
+    readingTime: 11,
     component: React.lazy(() => import("../posts/Happiness")),
   },
 ];

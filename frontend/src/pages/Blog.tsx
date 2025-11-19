@@ -159,6 +159,7 @@ export const Blog = () => {
                 postDate={p.date}
                 filters={p.tags}
                 image={p.image}
+                readingTime={p.readingTime}
                 onSearch={handleSearch}
               />
             ))
@@ -237,7 +238,7 @@ export const BlogPostDetails = () => {
             <span className="category-badge">{primaryCategory}</span>
             <span className="read-time-badge">
               <i className="bx bx-time-five"></i>
-              5 min read
+              {post.readingTime} min read
             </span>
           </div>
 
@@ -323,7 +324,7 @@ export const BlogPostDetails = () => {
                     <h4 className="related-post-title">{relatedPost.title}</h4>
                     <p className="related-post-excerpt">{relatedPost.description}</p>
                     <div className="related-post-footer">
-                      <span className="related-post-time">5 min read</span>
+                      <span className="related-post-time">{relatedPost.readingTime} min read</span>
                       <i className="bx bx-right-arrow-alt"></i>
                     </div>
                   </div>
