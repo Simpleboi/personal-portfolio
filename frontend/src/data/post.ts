@@ -187,4 +187,15 @@ export const Posts: PostMeta[] = [
     readingTime: 11,
     component: React.lazy(() => import("../posts/Happiness")),
   },
+  {
+    slug: "gender",
+    title: "Who Am I Without Your Expectations?",
+    description:
+      "This post dives into the emotional toll of gender roles, from suppressing feelings to losing yourself in a persona, and why breaking free from these expectations matters for our mental health.",
+    date: "November 20th, 2025",
+    tags: ["Personal", "Mental Health"],
+    image: "/assets/images/gender.jpg",
+    readingTime: 14,
+    component: React.lazy(() => import("../posts/GenderWars")),
+  },
 ];
