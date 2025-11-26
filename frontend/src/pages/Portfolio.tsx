@@ -1,6 +1,7 @@
 import { Nav } from "@/components/nav";
 // import blogPost from "/assets/images/blog-post-one.jpg";
 import compsci from "/assets/images/compsci-logo.png";
+import sjcLogo from "/assets/images/sjc-logo.jpg";
 import "../styles/portfolio.scss";
 
 interface PortfolioCardProps {
@@ -10,18 +11,56 @@ interface PortfolioCardProps {
   desc: string;
 }
 
+interface LeadershipItemProps {
+  title: string;
+  role: string;
+  period: string;
+  description: string;
+  image: string;
+  achievements: string[];
+}
+
+const LeadershipItems: LeadershipItemProps[] = [
+  {
+    title: "Student Instructor",
+    role: "Computer Science Department",
+    period: "Spring 2024 - Fall 2025",
+    description:
+      "Mentored students in programming fundamentals, assisted with coursework, and facilitated hands-on coding workshops to help students master core computer science concepts.",
+    image: sjcLogo,
+    achievements: [
+      "Guided 50+ students through programming assignments",
+      "Conducted weekly tutoring sessions and office hours",
+      "Developed supplementary learning materials and exercises",
+    ],
+  },
+  {
+    title: "President",
+    role: "SJC Computer Science Club",
+    period: "Spring 2023 - Present",
+    description:
+      "led the campus computer science club, organizing workshops, coding challenges, and networking events to build a collaborative tech community.",
+    image: compsci,
+    achievements: [
+      "Grew club membership to many active students",
+      "Organized monthly projects and coding competitions",
+      "Established partnerships with local tech affiliates",
+    ],
+  },
+];
+
 const PortfolioItems: PortfolioCardProps[] = [
   {
     title: "JournalXP🎮📖",
-    desc: "JournalXP is a full-featured mental health journaling web application I developed to help users track thier mood, daily habits, and personal growth through gamified experiences. Built with React, TypeScript, TailwindCSS, and Firebase for the backend, it lets users sign up securely, write and organize journal entries, and earn XP. ",
+    desc: "JournalXP is a full-featured mental health journaling web application I developed to help users track their mood, daily habits, and personal growth through gamified experiences. Built with React, TypeScript, TailwindCSS, and Firebase for the backend, it lets users sign up securely, write and organize journal entries, and earn XP. ",
     link: "https://journalxp.com/",
     image: "/assets/images/jxp.png",
   },
   {
     title: "Pyra.js⚡🔥",
     desc: "Pyra is a modular build system for modern JavaScript and TypeScript projects. It takes inspiration from the elegance of Vite-like speed with the flexibility of plugin-driven architecture, allowing developers to craft, extend, and optimize builds for any kind of project, from small scripts to full-scale frameworks.",
-    link: "https://pyrajs.netlify.app/", 
-    image: "/assets/images/pyralogo.png"
+    link: "https://pyrajs.netlify.app/",
+    image: "/assets/images/pyralogo.png",
   },
   {
     title: "FireSpark🔥✨",
@@ -54,6 +93,41 @@ const PortfolioItems: PortfolioCardProps[] = [
     image: "/assets/images/donebydevonne.png",
   },
 ];
+
+export const LeadershipCard: React.FC<LeadershipItemProps> = ({
+  title,
+  role,
+  period,
+  description,
+  image,
+  achievements,
+}) => {
+  return (
+    <div className="leadership-card">
+      <div className="leadership-card__header">
+        <div className="leadership-card__image-wrapper">
+          <img src={image} alt={title} className="leadership-card__image" />
+        </div>
+        <div className="leadership-card__info">
+          <h3 className="leadership-card__title">{title}</h3>
+          <p className="leadership-card__role">{role}</p>
+          <span className="leadership-card__period">{period}</span>
+        </div>
+      </div>
+      <div className="leadership-card__content">
+        <p className="leadership-card__description">{description}</p>
+        <div className="leadership-card__achievements">
+          <h4>Key Achievements:</h4>
+          <ul>
+            {achievements.map((achievement, index) => (
+              <li key={index}>{achievement}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export const PortfolioCard: React.FC<PortfolioCardProps> = ({
   title,
@@ -99,6 +173,8 @@ export const Portfolio = () => {
   return (
     <section className="portfolio-container">
       <Nav />
+
+      {/* Projects Section */}
       <div className="port-header">
         <h1>
           My Personal <span>&lt;Projects/&gt;</span>
@@ -114,6 +190,31 @@ export const Portfolio = () => {
             link={element.link}
           />
         ))}
+      </div>
+
+      {/* Leadership Section */}
+      <div className="leadership-section">
+        <div className="section-header">
+          <h2>
+            Leadership & <span>&lt;Involvements/&gt;</span>
+          </h2>
+          <p className="section-subtitle">
+            Building communities and empowering future developers
+          </p>
+        </div>
+        <div className="leadership-grid">
+          {LeadershipItems.map((item, index) => (
+            <LeadershipCard
+              key={index}
+              title={item.title}
+              role={item.role}
+              period={item.period}
+              description={item.description}
+              image={item.image}
+              achievements={item.achievements}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
