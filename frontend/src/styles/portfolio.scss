@@ -19,6 +19,33 @@
         color: p.$main-color;
       }
     }
+
+    .portfolio-story {
+      max-width: 800px;
+      margin: 2rem auto 0;
+      text-align: left;
+      background: white;
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-left: 4px solid p.$main-color;
+
+      p {
+        color: #555;
+        line-height: 1.8;
+        font-size: 1.05rem;
+        margin-bottom: 1.25rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        strong {
+          color: p.$main-color;
+          font-weight: 600;
+        }
+      }
+    }
   }
 }
 
@@ -403,8 +430,21 @@
     padding: 1.5rem;
   }
 
-  .port-header h1 {
-    font-size: 2.2rem;
+  .port-header {
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    .portfolio-story {
+      padding: 1.5rem 1.75rem;
+      font-size: 1rem;
+      margin: 1.5rem 1rem 0;
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
   }
 
   .portfolio-card {
@@ -467,7 +507,19 @@
     padding: 1rem;
   }
 
-  .port-header h1 {
-    font-size: 1.8rem;
+  .port-header {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .portfolio-story {
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0.5rem 0;
+
+      p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+    }
   }
 }
