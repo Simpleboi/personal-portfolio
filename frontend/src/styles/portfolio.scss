@@ -246,6 +246,22 @@
     transition: opacity 0.3s ease;
   }
 
+  &__status-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+  }
+
   &__content {
     padding: 1.5rem;
     display: flex;
@@ -270,6 +286,30 @@
       height: 3px;
       background-color: p.$main-color;
       border-radius: 3px;
+    }
+  }
+
+  &__tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    .tech-badge {
+      background-color: #f0f4ff;
+      color: p.$main-color;
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: p.$main-color;
+        color: white;
+        transform: translateY(-2px);
+      }
     }
   }
 
